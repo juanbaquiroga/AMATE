@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Jost:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>contacto</title>
+</head>
+<body>
+    <header class="headerPages" >
+        <div class="logoPages">
+            <a href="../index.html">
+                <img src="../img/logos/logo06.png" alt="logo de la pagina">
+            </a>
+        </div>
+
+        <div class="menuPages">
+        <nav class="menu">
+            <ul>
+                <li class="menuItem">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="menuItem2">
+                    <a href="Productos.html">Productos</a>
+                    <ul class="menuSublist">
+                        <li class="menuSublistItem"><a href="Productos.html#mates">Mates</a></li>
+                        <li class="menuSublistItem"><a href="Productos.html#bombillas">Bombillas</a></li>
+                        <li class="menuSublistItem"><a href="Productos.html#termos">Termos</a></li>
+                        <li class="menuSublistItem"><a href="Productos.html#combos">Combos</a></li>
+                    </ul>
+                </li>
+                <li class="menuItem">
+                    <a href="SobreNosotros.html">Sobre nosotros</a>
+                </li>
+                <li class="menuItem">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+                <li class="menuItem">
+                    <a href="Tips.html">Tips materos</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="bodyPages">
+            <h1 class="title">Contacto</h1>
+            <form class="formulario">
+                <fieldset>
+                    <legend>
+                        <h2>formulario de contacto</h2>
+                    </legend>
+                    <div class="elementoFormulario">
+                        <label for="nombre">
+                            coloca tu nombre
+                        </label>
+                        <input type="text" name="nombre" placeholder="nombre">
+                    </div>
+                    <div class="elementoFormulario">
+                        <label for="email">
+                            coloca tu email
+                        </label>
+                        <input type="mail" name="email" placeholder="mail">
+                    </div>
+                    <div class="elementoFormulario">
+                        <label for="Neusletter">
+                            <input type="checkbox" name="newsletter"> ¿Desea recibir el newsletter?
+                        </label>
+                    </div>
+                    <div class="elementoFormulario">
+                        <label for="pais">
+                            selecciona tu pais
+                        </label>
+                        <select name="pais">
+                            <option value="argentina">argentina</option>
+                            <option value="colombia">colombia</option>
+                            <option value="chile">chile</option>
+                            <option value="uruguay">uruguay</option>
+                            <option value="paraguay">paraguay</option>
+                            <option value="brasil">brasil</option>
+                            <option value="otro">otro</option>
+                        </select>
+                    </div>
+                    <div class="elementoFormulario">
+                        <input class="botonContacto" type="submit">
+                        <input class="botonContacto" type="reset" value="borrar todo">
+                    </div>
+                </fieldset>
+            </form>
+            <div  class="formaContacto">
+                <h2 class="subtitle">¿Como nos contactamos?</h2>
+                <p>una vez envies el formulario te llegara un mail para responderte tu consulta o asistierte</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© todos los derechos reservados | autor del sitio: J.B Quiroga</p>
+    </footer>
+</body>
+</html>

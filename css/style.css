@@ -1,0 +1,772 @@
+/*aplico reset*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*nav y logo*/
+
+header{
+  background-color: rgb(76, 87, 54);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  display: absolute
+}
+.menu a{
+  font-family: 'Hubballi', cursive;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px;
+}
+.menu ul{
+  list-style: none;
+}
+.menu ul li{
+  position: relative;
+  float: left;
+  margin:0;
+  padding: 5px 10px;
+}
+.menu ul li:hover {
+  background: rgba(229, 218, 199, 0.6); ;
+}
+.menu ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+.menu ul ul li{
+  background-color: rgba(229, 218, 199, 0.6);
+  float: none;
+  width: 75px;
+}
+.menu ul ul li:hover{
+  background-color: rgba(229, 218, 199, 0.5);
+}
+.menu ul ul a{
+  line-height: 120%;
+  padding: 10px 15px;
+}
+.menu ul li:hover > ul {
+  display: block;
+}
+
+/*hero */
+.logo a img{
+  height: 6.3rem;
+}
+.logo {
+  position: absolute;
+  margin-top: 150px;
+}
+.hero{
+  display: flex;
+  background-image: url(../img/fotos/img1.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-flow: column ;
+}
+.containerHero{
+  padding: 1.3rem;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  background-color: rgba(0,0,0, 0.3);
+  color: rgb(229, 218, 199);
+}
+.h2Hero{
+  color: rgb(229, 218, 199);
+  font-size: 2rem;
+}
+.h3Hero{
+  font-weight:900;
+  font-size: 1.3rem;
+}
+
+/*body home*/
+
+.body{
+  padding: 1.6rem 1rem;
+  background-color: rgb(106, 121, 75) ;
+  display: grid;
+  grid-template-areas:  "imgBody01" 
+                        "textBody01"
+                        "imgBody02"
+                        "textBody02" 
+                        "imgBody03" 
+                        "textBody03"
+                        "imgBody04"
+                        "textBody04";
+  
+  font-family: 'Hubballi', cursive;
+  color: rgb(229, 218, 199);
+}
+
+.imgBody01{
+  grid-area: imgBody01;
+  display: flex;
+  justify-content: start;
+}
+.textBody01{
+  grid-area: textBody01;
+  text-align: start;
+  margin-bottom: 1.3rem;
+}
+.imgBody02{
+  grid-area: imgBody02;
+  display: flex;
+  justify-content: end;
+}
+.textBody02 {
+  grid-area: textBody02;
+  text-align: end;
+  margin-bottom: 1.3rem;
+}
+.imgBody03{
+  grid-area: imgBody03;
+  display: flex;
+  justify-content: start;
+}
+.textBody03{
+  grid-area: textBody03;
+  text-align: start;
+  margin-bottom: 1.3rem;
+}
+.imgBody04{
+  grid-area: imgBody04;
+  display: flex;
+  justify-content: end;
+}
+.textBody04 {
+  grid-area: textBody04;
+  text-align: end;
+  margin-bottom: 1.3rem;
+}
+
+.enlaceBody{
+  font-weight: 900;
+  margin-top: 1rem;
+  text-decoration: none ;
+  color: black;
+}
+.imgBody01 img,.imgBody02 img,.imgBody03 img,.imgBody04 img{
+  width: 20rem;
+  border-radius: 20px;
+}
+
+/*productos destacados*/
+.cardProducts{
+  background-color: rgb(106, 121, 75);
+  color: rgb(229, 218, 199);
+  font-family: 'Hubballi', cursive;
+}
+.cards{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.titleCardProducts{
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+.card{
+  border-radius: 15px;
+  background-color: rgba(0,0,0, 0.5);
+  margin: 0.5rem;
+  padding: 0.6rem;
+  max-width: 9rem;
+
+}
+.card img{
+  width: 9rem;
+  border-radius: 10px;
+}
+.cardTitle{
+  font-size: 1.3rem;
+}
+.cardText{
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  max-width: 15rem;
+}
+.cardPrice{
+  color: rgb(5,5,5);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 0.3rem;
+}
+
+/*footer*/
+
+footer{
+  background-color: rgb(10,10,10);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p{
+  color: rgb(229, 218, 199);
+  font-size:0.8rem;
+  font-family: 'Hubballi', cursive
+}
+
+/*header pages*/
+
+.headerPages{
+  padding: o;
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content:space-between;
+}
+.logoPages a img{
+  height: 65px;
+}
+
+/*body pages*/
+
+.bodyPages{
+  background-color:rgb(106, 121, 75) ;
+  margin: 0;
+  color: rgb(229, 218, 199) ;
+  font-family: 'Hubballi', cursive;
+}
+.title{
+  text-align: center;
+  font-size: 45px;
+  padding: 0.7rem 0
+}
+.subtitle{
+  text-align: start;
+  font-size: 35px;
+}
+.textoPages{
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/*productos*/
+.bodyProductos{
+  background-color:rgb(106, 121, 75) ;
+  color: rgb(229, 218, 199) ;
+  font-family: 'Hubballi', cursive;
+  display: grid;
+  grid-template-areas:  "title"
+                        "mates"
+                        "productosMates"
+                        "termos"
+                        "productosTermos"
+                        "bombillas"
+                        "productosBombillas"
+                        "combos"
+                        "productosCombos";
+}
+.bodyProductos .title{
+  grid-area: title;
+}
+#mates{
+  grid-area: mates;
+}
+#termos{
+  grid-area: termos;
+}
+#combos{
+  grid-area: combos;
+}
+#bombillas{
+  grid-area: bombillas;
+}
+.productosMates{
+  grid-area: productosMates;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem 0;
+}
+.productosTermos{
+  grid-area: productosTermos;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem 0;
+}
+.productosCombos{
+  grid-area: productosCombos;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem 0;
+}
+.productosBombillas{
+  grid-area: productosBombillas;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem 0;
+}
+
+
+/*sobre nosotros*/
+
+.infoNosotros{
+  display: grid;
+  grid-template-areas: "imgNosotros01"
+                        "textNosotros01"
+                        "imgNosotros02"
+                        "textNosotros02"
+                        "imgNosotros03"
+                        "textNosotros03";
+  font-family: 'Hubballi', cursive;
+  background-color:rgb(106, 121, 75) ;
+  padding: 1.6rem 1rem;
+  color: rgb(229, 218, 199)
+}
+.imgNosotros01{
+  grid-area: imgNosotros01;
+  display: flex;
+  justify-content: start;
+}
+.textNosotros01{
+  grid-area: textNosotros01;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.imgNosotros02{
+  grid-area: imgNosotros02;
+  display: flex;
+  justify-content: end;
+}
+.textNosotros02 {
+  grid-area: textNosotros02;
+  text-align: end;
+  margin-bottom: 20px;
+
+}
+.imgNosotros03{
+  grid-area: imgNosotros03;
+  display: flex;
+  justify-content: start;
+}
+.textNosotros03{
+  grid-area: textNosotros03;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.infoNosotros img{
+  width: 20rem;
+  border-radius: 20px;
+}
+/*contacto*/
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 1rem ;
+}
+fieldset{
+  padding: 20px;
+  border: solid 0.4rem  rgb(76, 87, 54);
+  border-radius: 30px 2px;
+}
+legend{
+  text-align:initial;
+  padding: 0.4rem;
+}
+input{
+  background-color: rgb(76, 87, 54) ;
+  padding: 0.4rem;
+  border-radius: 15px 15px;
+  border: none;
+}
+select{
+  background-color: rgb(76, 87, 54) ;
+  font-family: 'Hubballi', cursive;
+  font-size: 15px;
+  padding: 0.2rem;
+}
+label{
+  font-size: 20px;
+}
+.botonContacto{
+  border-radius: 30px;
+  border: none;
+  padding: 0.4rem;
+  font-family: 'Hubballi', cursive;
+  font-size: 20px;
+}
+.elementoFormulario{
+  border: none;
+  margin: 0.3rem 0;
+}
+.formaContacto{
+  background-color: rgb(106, 121, 75);
+  padding: 1rem 0.3rem 14rem 0 ;
+}
+.formaContacto p{
+  font-size: 20px;
+}
+
+
+/*tabets*/
+
+@media only screen and (min-width:600px){
+  
+  /*nav y logo*/
+
+  .logo a img{
+    height: 7.8rem;
+  }
+  .logo {
+    margin-top: 12rem;
+  }  
+  .menu a{
+    font-size: 1.3rem;
+  }
+  .menu ul ul li{
+    width: 5.9rem;
+  }
+
+  /*hero*/
+  .h2Hero{
+    color: rgb(229, 218, 199);
+    font-size: 2.5rem;
+  }
+  .h3Hero{
+    font-weight:900;
+    font-size: 1.6rem;
+  }
+
+  /*body home*/
+  .body{
+    grid-template-areas:  "imgBody01 textBody01 textBody01"
+                          "textBody02 textBody02 imgBody02" 
+                          "imgBody03 textBody03 textBody03"
+                          "textBody04 textBody04 imgBody04";
+    padding: 1.6rem 2rem
+  }
+  
+  .imgBody01, .imgBody02, .imgBody03, .imgBody04{
+    justify-content: start;
+    margin:0 0.5rem 2rem 0.5rem;
+  }
+  .imgBody01 img,.imgBody02 img,.imgBody03 img,.imgBody04 img{
+    width: 22rem;
+  }
+  .body h3{
+    font-size: 2rem;
+  }
+  .body p{
+    font-size: 1.2rem;
+  }
+  .body a{
+    font-size: 1.4rem;
+  }
+  /*productos estacados*/
+  
+  .titleCardProducts{
+    font-size: 2rem;
+  }
+  .cards{
+    flex-flow: row wrap;
+    align-items: inherit;
+  }
+
+  /*footer*/
+  footer{
+    height: 4rem;
+  }
+  footer p{
+    font-size: 1.3rem;
+  }
+
+  /*header pages*/
+
+  .headerPages{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content:space-between;
+  }
+  .logoPages a img{
+    height: 4rem;
+  }
+
+  /*body pages*/
+  .title{
+    text-align: center;
+    font-size: 3.4rem;
+    padding: 0.7rem 0
+  }
+  .subtitle{
+    text-align: start;
+    font-size: 2.6rem;
+  }
+  .textoPages{
+    font-size: 1.5rem;
+  }
+
+  /*productos*/
+
+  .productosMates{
+    padding: 2rem 0;
+  }
+  .productosTermos{
+    padding: 2rem 0;
+  }
+  .productosCombos{
+    padding: 2rem 0;
+  }
+  .productosBombillas{
+    padding: 2rem 0;
+  }
+  
+  .card{
+    margin: 0.7rem;
+    padding: 0.8rem;
+    max-width: 12rem;
+  
+  }
+  .card img{
+    width: 12rem;
+  }
+  .cardTitle{
+    font-size: 1.8rem;
+  }
+  .cardText{
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .cardPrice{
+    font-size: 1.6rem;
+    margin-top: 0.6rem;
+  }
+
+  /*sobre nosotros*/
+  .infoNosotros{
+    grid-template-areas: "imgNosotros01 textNosotros01 textNosotros01"
+                          "textNosotros02 textNosotros02 imgNosotros02"
+                          "imgNosotros03 textNosotros03 textNosotros03";
+  padding: 2.6rem 2rem
+  }
+ .imgNosotros01, .imgNosotros02, .imgNosotros03{
+   margin: 0 1rem 2rem 1rem;
+ }
+ .infoNosotros img{
+  width: 22rem;
+ }
+ .infoNosotros h2{
+   font-size: 2rem;
+ }
+ .infoNosotros p{
+   font-size: 1.2rem;
+ }
+
+
+  /*contacto*/
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9rem 1rem ;
+  }
+  legend{
+    font-size: 2rem;
+  }
+  select{
+    font-size: 1.3rem;
+  }
+  label{
+    font-size: 1.7rem;
+  }
+  .botonContacto{
+    font-size: 1.7rem;
+  }
+  .formaContacto{
+    margin: 0 0 0 1rem;
+  }
+  .formaContacto p{
+    font-size: 1.7rem;
+    margin: 2rem 0;
+  }
+}
+
+  /*pantallas +1024px*/
+
+@media only screen and (min-width:1024px){
+   /*nav y logo*/
+
+   .logo a img{
+    height: 8.4rem;
+  }
+  .logo {
+    margin-top: 14rem;
+  }  
+  .menu a{
+    font-size: 1.6rem;
+  }
+  .menu ul ul li{
+    width: 7.1rem;
+  }
+  /*hero*/
+  .h2Hero{
+    color: rgb(229, 218, 199);
+    font-size: 3rem;
+  }
+  .h3Hero{
+    font-weight:900;
+    font-size: 2rem;
+  }
+
+  /*body home*/
+  .body{
+    padding: 2.6rem 5rem
+  }
+  
+  .imgBody01, .imgBody02, .imgBody03, .imgBody04{
+    justify-content: start;
+    margin:0 1rem 3rem 1rem;
+  }
+  .imgBody01 img,.imgBody02 img,.imgBody03 img,.imgBody04 img{
+    width: 25rem;
+  }
+  .body h3{
+    font-size: 2.5rem;
+  }
+  .body p{
+    font-size: 1.6rem;
+  }
+  .body a{
+    font-size: 1.8rem;
+  }
+  .body a:hover{
+    background-color: rgba(229, 218, 199, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  /*productos estacados*/
+  
+  .titleCardProducts{
+    font-size: 3rem;
+  }
+  .cards{
+    justify-content: center;
+  }
+
+  /*footer*/
+  footer{
+    height: 5rem;
+  }
+  footer p{
+    font-size: 1.8rem;
+  }
+
+  /*header pages*/
+
+  .logoPages a img{
+    height: 5rem;
+  }
+
+  /*body pages*/
+
+  .title{
+    font-size: 4rem;
+  }
+  .subtitle{
+    text-align: start;
+    font-size: 3rem;
+  }
+  .textoPages{
+    font-size: 2rem;
+  }
+
+  /*productos*/
+
+  .productosMates{
+    padding: 2.5rem 0;
+  }
+  .productosTermos{
+    padding: 2.5rem 0;
+  }
+  .productosCombos{
+    padding: 2.5rem 0;
+  }
+  .productosBombillas{
+    padding: 2.5rem 0;
+  }
+  
+  .card{
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 15rem;
+  
+  }
+  .card img{
+    width: 15rem;
+  }
+  .cardTitle{
+    font-size: 2.2rem;
+  }
+  .cardText{
+    margin-top: 0.7rem;
+    font-size: 1.8rem;
+  }
+  .cardPrice{
+    font-size: 2rem;
+    margin-top: 0.8rem;
+  }
+
+  /*sobre nosotros*/
+  
+  .infoNosotros{
+    padding: 3.6rem 5rem;
+  }
+ .imgNosotros01, .imgNosotros02, .imgNosotros03{
+   margin: 0 1rem 3rem 1rem;
+ }
+ .infoNosotros img{
+  width: 25rem;
+ }
+ .infoNosotros h2{
+   font-size: 2.5rem;
+ }
+ .infoNosotros p{
+   font-size: 1.6rem;
+ }
+
+  /*contacto*/
+
+  form{
+    margin: 14rem 1rem ;
+  }
+  legend{
+    font-size: 3rem;
+  }
+  select{
+    font-size: 1.8rem;
+  }
+  label{
+    font-size: 2rem;
+  }
+  .botonContacto{
+    font-size: 2rem;
+  }
+  .formaContacto{
+    margin: 0 0 0 2rem;
+  }
+  .formaContacto p{
+    font-size: 2rem;
+    margin: 1rem 0 4rem 0;
+  }
+
+}
