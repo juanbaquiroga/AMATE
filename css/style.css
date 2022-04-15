@@ -7,9 +7,9 @@
 
 /*nav y logo*/
 
-header{
+.header{
   background-color: rgb(76, 87, 54);
-  width: 100%;
+  width: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
