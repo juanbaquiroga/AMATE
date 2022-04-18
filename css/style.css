@@ -237,6 +237,7 @@ footer p{
   display: flex;
   flex-flow: row-reverse;
   justify-content:space-between;
+  background-color: rgb(106, 121, 75);
 }
 .logoPages a img{
   height: 65px;
@@ -425,9 +426,23 @@ label{
 .formaContacto p{
   font-size: 20px;
 }
+/*tips materos*/
 
 
-/*tabets*/
+
+  /*estilos del bootstrap*/
+.nav-tips{
+  background-color: rgb(106, 121, 75);
+}
+.navbar{
+  padding: 0;
+}
+.navbar-brand{
+  width: 70px;
+}
+
+
+/*pantallas +600px*/
 
 @media only screen and (min-width:600px){
   
@@ -778,3 +793,4 @@ label{
   }
 
 }
+
