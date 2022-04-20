@@ -1,0 +1,16 @@
+.navbar{
+    padding: 0;
+    border-bottom: solid 0.2rem rgb(31, 31, 31);
+    .nav-tips{
+        background-color: $color-bg;
+    }
+    img{
+        width: 5rem;
+    }
+}
+
+.carousel{
+    max-width: 60rem;
+    max-height: 60rem;
+    margin: auto;
+}

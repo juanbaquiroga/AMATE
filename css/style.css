@@ -245,6 +245,97 @@ footer {
     flex-flow: row wrap;
     padding: 1rem 0; }
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 1rem; }
+  form fieldset {
+    padding: 20px;
+    border: solid 0.4rem #4c5736;
+    border-radius: 30px 2px; }
+    form fieldset legend {
+      text-align: initial;
+      padding: 0.4rem; }
+    form fieldset .elementoFormulario {
+      border: none;
+      margin: 0.3rem 0; }
+      form fieldset .elementoFormulario label {
+        font-size: 20px; }
+      form fieldset .elementoFormulario input {
+        background-color: #4c5736;
+        padding: 0.4rem;
+        border-radius: 15px 15px;
+        border: none; }
+      form fieldset .elementoFormulario select {
+        background-color: #4c5736;
+        font-family: 'Hubballi', cursive;
+        font-size: 15px;
+        padding: 0.2rem; }
+      form fieldset .elementoFormulario .botonContacto {
+        border-radius: 30px;
+        border: none;
+        padding: 0.4rem;
+        font-family: 'Hubballi', cursive;
+        font-size: 20px; }
+
+.formaContacto {
+  background-color: #6a794b;
+  padding: 1rem 0.3rem 14rem 0; }
+  .formaContacto p {
+    font-size: 20px; }
+
+.infoNosotros {
+  background-color: #6a794b;
+  padding: 1.6rem 1rem; }
+
+.imgNosotros01 {
+  grid-area: imgNosotros01;
+  display: flex;
+  justify-content: start; }
+
+.textNosotros01 {
+  grid-area: textNosotros01;
+  text-align: start;
+  margin-bottom: 20px; }
+
+.imgNosotros02 {
+  grid-area: imgNosotros02;
+  display: flex;
+  justify-content: end; }
+
+.textNosotros02 {
+  grid-area: textNosotros02;
+  text-align: end;
+  margin-bottom: 20px; }
+
+.imgNosotros03 {
+  grid-area: imgNosotros03;
+  display: flex;
+  justify-content: start; }
+
+.textNosotros03 {
+  grid-area: textNosotros03;
+  text-align: start;
+  margin-bottom: 20px; }
+
+.infoNosotros img {
+  width: 20rem;
+  border-radius: 20px; }
+
+.navbar {
+  padding: 0;
+  border-bottom: solid 0.2rem #1f1f1f; }
+  .navbar .nav-tips {
+    background-color: #6a794b; }
+  .navbar img {
+    width: 5rem; }
+
+.carousel {
+  max-width: 60rem;
+  max-height: 60rem;
+  margin: auto; }
+
 /*pantallas +600px*/
 @media screen and (min-width: 600px) {
   /*nav y logo*/
