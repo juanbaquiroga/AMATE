@@ -1,0 +1,50 @@
+.header{
+    background-color: $color_bg;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.menu {
+    z-index: 2;
+    display: absolute;
+    a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    }
+    ul{
+        list-style: none;
+        li{
+            position: relative;
+            float: left;
+            margin:0;
+            padding: 5px 10px;
+            &:hover{
+                background: rgba(229, 218, 199, 0.6);
+            }
+            &:hover > ul{
+                display: block;
+            }
+        }
+        ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0;
+            li{
+                background-color: rgba(229, 218, 199, 0.6);
+                float: none;
+                width: 75px; 
+                &:hover{
+                    background-color: rgba(229, 218, 199, 0.5);
+                }
+            }
+            a{
+                line-height: 120%;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

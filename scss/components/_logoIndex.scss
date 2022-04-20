@@ -1,0 +1,11 @@
+.logo {
+    position: absolute;
+    margin-top: 150px;
+    &:hover{
+        transform: scale(115%);
+    transition: 0.5s;
+    }
+    a img{
+        height: 6.3rem;
+    }
+}

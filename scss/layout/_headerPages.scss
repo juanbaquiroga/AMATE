@@ -1,0 +1,17 @@
+.headerPages{
+    padding: o;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content:space-between;
+    background-color: $color_bg;
+    .logoPages{
+        a img{
+            height: 65px;
+        }
+        &:hover{
+            transform: scale(115%);
+            transition: 0.5s;
+        }
+    }
+}

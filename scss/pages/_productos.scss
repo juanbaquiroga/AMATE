@@ -1,0 +1,42 @@
+.bodyProductos{
+    background-color:$color_bg;
+    .title{
+        grid-area: title;
+    }
+    #mates{
+        grid-area: mates;
+    }
+    #termos{
+        grid-area: termos;
+    }
+    #combos{
+        grid-area: combos;
+    }
+    #bombillas{
+        grid-area: bombillas;
+    }
+    .productosMates{
+        grid-area: productosMates;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+    .productosTermos{
+        grid-area: productosTermos;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+    .productosCombos{
+        grid-area: productosCombos;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+    .productosBombillas{
+        grid-area: productosBombillas;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+}

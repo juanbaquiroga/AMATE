@@ -1,0 +1,41 @@
+/*grid home*/
+
+.body{
+    display: grid;
+    grid-template-areas:  "imgBody01" 
+                          "textBody01"
+                          "imgBody02"
+                          "textBody02" 
+                          "imgBody03" 
+                          "textBody03"
+                          "imgBody04"
+                          "textBody04";
+}
+
+/*grid productos*/
+
+.bodyProductos{
+    display: grid;
+    grid-template-areas:  "title"
+                          "mates"
+                          "productosMates"
+                          "termos"
+                          "productosTermos"
+                          "bombillas"
+                          "productosBombillas"
+                          "combos"
+                          "productosCombos";
+}
+
+/*grid sobre nosotros*/
+
+.infoNosotros{
+    display: grid;
+    grid-template-areas: "imgNosotros01"
+                          "textNosotros01"
+                          "imgNosotros02"
+                          "textNosotros02"
+                          "imgNosotros03"
+                          "textNosotros03";
+    font-family: 'Hubballi', cursive;
+}

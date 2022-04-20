@@ -1,0 +1,49 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem ;
+    fieldset{
+        padding: 20px;
+        border: solid 0.4rem  rgb(76, 87, 54);
+        border-radius: 30px 2px;
+        legend{
+            text-align:initial;
+            padding: 0.4rem;
+        }
+        .elementoFormulario{
+            border: none;
+            margin: 0.3rem 0;
+            label{
+                font-size: 20px;
+            }
+            input{
+                background-color: rgb(76, 87, 54) ;
+                padding: 0.4rem;
+                border-radius: 15px 15px;
+                border: none;
+            }
+            select{
+                background-color: rgb(76, 87, 54) ;
+                font-family: 'Hubballi', cursive;
+                font-size: 15px;
+                padding: 0.2rem;
+            }
+            
+            .botonContacto{
+                border-radius: 30px;
+                border: none;
+                padding: 0.4rem;
+                font-family: 'Hubballi', cursive;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.formaContacto{
+    background-color: rgb(106, 121, 75);
+    padding: 1rem 0.3rem 14rem 0 ;
+    p{
+        font-size: 20px;
+    }
+}

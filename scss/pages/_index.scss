@@ -1,0 +1,70 @@
+@import"components/logoIndex";
+@import"layout/hero";
+.body{
+    padding: 1.6rem 1rem;
+    background-color:$color_bg;
+    .imgBody01{
+    grid-area: imgBody01;
+    display: flex;
+    justify-content: start;
+    }
+    .textBody01{
+    grid-area: textBody01;
+    text-align: start;
+    margin-bottom: 1.3rem;
+    }
+    .imgBody02{
+    grid-area: imgBody02;
+    display: flex;
+    justify-content: end;
+    }
+    .textBody02 {
+    grid-area: textBody02;
+    text-align: end;
+    margin-bottom: 1.3rem;
+    }
+    .imgBody03{
+    grid-area: imgBody03;
+    display: flex;
+    justify-content: start;
+    }
+    .textBody03{
+    grid-area: textBody03;
+    text-align: start;
+    margin-bottom: 1.3rem;
+    }
+    .imgBody04{
+    grid-area: imgBody04;
+    display: flex;
+    justify-content: end;
+    }
+    .textBody04 {
+    grid-area: textBody04;
+    text-align: end;
+    margin-bottom: 1.3rem;
+    }
+    .enlaceBody{
+        font-weight: 900;
+        margin-top: 1rem;
+        text-decoration: none ;
+        color: black;
+    }
+    img{
+        width: 20rem;
+        border-radius: 20px;
+    }
+}
+
+.cardProducts{
+    background-color: $color_bg;
+    .titleCardProducts{
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    }
+    .cards{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}

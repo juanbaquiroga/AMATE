@@ -1,0 +1,355 @@
+/*pantallas +600px*/
+@media screen and(min-width:600px){
+    /*nav y logo*/
+    .logo {
+        margin-top: 12rem;
+        a img{
+            height: 7.8rem;
+        }
+    }  
+    .menu {
+        a{
+            font-size: 1.3rem;
+        }
+        ul ul li{
+            width: 5.9rem;
+        }
+    }
+  
+    /*hero*/
+    .h2Hero{
+        font-size: 2.5rem;
+    }
+    .h3Hero{
+        font-weight:900;
+        font-size: 1.6rem;
+    }
+
+
+    /*body home*/
+    .body{
+        grid-template-areas:  "imgBody01 textBody01 textBody01"
+                            "textBody02 textBody02 imgBody02" 
+                            "imgBody03 textBody03 textBody03"
+                            "textBody04 textBody04 imgBody04";
+        padding: 1.6rem 2rem;
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        a{
+            font-size: 1.4rem;
+        }
+        img{
+            width: 22rem;
+        }
+        .imgBody01, .imgBody02, .imgBody03, .imgBody04{
+            justify-content: start;
+            margin:0 0.5rem 2rem 0.5rem;
+        }
+    }
+
+    /*productos estacados*/
+    
+    .titleCardProducts{
+      font-size: 2rem;
+    }
+    .cardProducts{
+        .cards{
+            flex-flow: row wrap;
+            align-items: inherit;
+        }
+    }
+  
+    /*footer*/
+    footer{
+      height: 4rem;
+        p{
+            font-size: 1.3rem;
+        }
+    }
+  
+    /*header pages*/
+  
+    .headerPages{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content:space-between;
+        .logoPages a img{
+            height: 4rem;
+        }
+    }
+    
+  
+    /*fuentes*/
+    .title{
+      text-align: center;
+      font-size: 3.4rem;
+      padding: 0.7rem 0
+    }
+    .subtitle{
+      text-align: start;
+      font-size: 2.6rem;
+    }
+    .textoPages{
+      font-size: 1.5rem;
+    }
+  
+    /*productos*/
+  
+    .productosMates{
+      padding: 2rem 0;
+    }
+    .productosTermos{
+      padding: 2rem 0;
+    }
+    .productosCombos{
+      padding: 2rem 0;
+    }
+    .productosBombillas{
+      padding: 2rem 0;
+    }
+    
+    .card{
+        margin: 0.7rem;
+        padding: 0.8rem;
+        max-width: 12rem;
+        img{
+            width: 12rem;
+        }
+        .cardTitle{
+            font-size: 1.8rem;
+        }
+        .cardText{
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+        }
+        .cardPrice{
+            font-size: 1.6rem;
+            margin-top: 0.6rem;
+        }
+    }
+  
+    /*sobre nosotros*/
+    .infoNosotros{
+        grid-template-areas: "imgNosotros01 textNosotros01 textNosotros01"
+                            "textNosotros02 textNosotros02 imgNosotros02"
+                            "imgNosotros03 textNosotros03 textNosotros03";
+        padding: 2.6rem 2rem;
+        .imgNosotros01, .imgNosotros02, .imgNosotros03{
+            margin: 0 1rem 2rem 1rem;
+        }
+        img{
+            width: 22rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+   
+  
+  
+    /*contacto*/
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 9rem 1rem ;
+        legend{
+            font-size: 2rem;
+        }
+        select{
+            font-size: 1.3rem;
+        }
+        label{
+            font-size: 1.7rem;
+        }
+        .botonContacto{
+            font-size: 1.7rem;
+        }
+    }
+    
+    
+    .formaContacto{
+        margin: 0 0 0 1rem;
+        p{
+            font-size: 1.7rem;
+            margin: 2rem 0;
+        }
+    }
+}
+
+ /*pantallas +1024px*/
+
+ @media only screen and (min-width:1024px){
+    /*nav y logo*/
+
+   .logo {
+        margin-top: 14rem;
+        a img{
+            height: 8.4rem;
+        }
+    }  
+   .menu {
+        a{
+            font-size: 1.6rem;
+        }
+        ul ul li{
+            width: 7.1rem;
+        }
+    }
+   
+   /*hero*/
+   .h2Hero{
+        font-size: 3rem;
+    }
+   .h3Hero{
+        font-size: 2rem;
+    }
+ 
+   /*body home*/
+   .body{
+        padding: 2.6rem 5rem;
+        h3{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        a{
+            font-size: 1.8rem;
+            &:hover{
+                background-color: rgba(229, 218, 199, 0.5);
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+        img{
+            width: 25rem;
+        }
+        .imgBody01, .imgBody02, .imgBody03, .imgBody04{
+            margin:0 1rem 3rem 1rem;
+        }
+    }
+
+   /*productos estacados*/
+   
+    .titleCardProducts{
+        font-size: 3rem;
+    }
+    .cards{
+        justify-content: center;
+    }
+ 
+   /*footer*/
+    footer{
+        height: 5rem;
+        p{
+            font-size: 1.8rem;
+        }
+    }
+
+   /*header pages*/
+ 
+   .logoPages a img{
+     height: 5rem;
+   }
+ 
+   /*fuentes*/
+ 
+   .title{
+     font-size: 4rem;
+   }
+   .subtitle{
+     font-size: 3rem;
+   }
+   .textoPages{
+     font-size: 2rem;
+   }
+ 
+   /*productos*/
+ 
+   .productosMates{
+     padding: 2.5rem 0;
+   }
+   .productosTermos{
+     padding: 2.5rem 0;
+   }
+   .productosCombos{
+     padding: 2.5rem 0;
+   }
+   .productosBombillas{
+     padding: 2.5rem 0;
+   }
+   
+    .card{
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 15rem;
+        img{
+            width: 15rem;
+        }
+        .cardTitle{
+            font-size: 2.2rem;
+        }
+        .cardText{
+            margin-top: 0.7rem;
+            font-size: 1.8rem;
+        }
+        .cardPrice{
+            font-size: 2rem;
+            margin-top: 0.8rem;
+        }
+    }
+
+ 
+   /*sobre nosotros*/
+   
+    .infoNosotros{
+        padding: 3.6rem 5rem;
+        .imgNosotros01, .imgNosotros02, .imgNosotros03{
+            margin: 0 1rem 3rem 1rem;
+        }
+        img{
+            width: 25rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
+
+   /*contacto*/
+    
+    form{
+        margin: 14rem 1rem ;
+        legend{
+            font-size: 3rem;
+        }
+        select{
+            font-size: 1.8rem;
+        }
+        label{
+            font-size: 2rem;
+        }
+        .botonContacto{
+            font-size: 2rem;
+        }
+    }
+    
+   
+    .formaContacto{
+        margin: 0 0 0 2rem;
+        p{
+            font-size: 2rem;
+            margin: 1rem 0 4rem 0;
+        }
+    }
+}
