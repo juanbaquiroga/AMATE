@@ -11,23 +11,71 @@
 
 .title {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 0.7rem 0; }
 
 .subtitle {
   text-align: start;
-  font-size: 35px; }
+  font-size: 2rem; }
 
 .text {
   text-align: center;
   padding: 0 1rem; }
 
+.h1Hero {
+  font-size: 2rem;
+  font-weight: 900; }
+
 .h2Hero {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 900; }
 
 .h3Hero {
   font-weight: 900;
   font-size: 1.3rem; }
+
+.card {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  padding: 0.6rem;
+  max-width: 9rem; }
+  .card img {
+    width: 9rem;
+    border-radius: 10px; }
+  .card .cardTitle {
+    font-size: 1.3rem; }
+  .card .cardText {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    max-width: 15rem; }
+  .card .cardPrice {
+    color: #050505;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-top: 0.3rem; }
+
+.navbar {
+  padding: 0;
+  border-bottom: solid 0.2rem #1f1f1f; }
+  .navbar .nav-tips {
+    background-color: #6a794b; }
+  .navbar img {
+    width: 5rem; }
+
+.carousel {
+  max-width: 60rem;
+  max-height: 60rem;
+  margin: auto; }
+
+.logo {
+  position: absolute;
+  margin-top: 150px; }
+  .logo:hover {
+    transform: scale(115%);
+    transition: 0.5s; }
+  .logo a img {
+    height: 6.3rem; }
 
 .header {
   background-color: #6a794b;
@@ -70,6 +118,24 @@
         line-height: 120%;
         padding: 10px 15px; }
 
+.hero {
+  display: flex;
+  background-image: url(../img/fotos/img1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-flow: column; }
+  .hero .containerHero {
+    padding: 1.3rem;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .hero .containerHero .h1Hero, .hero .containerHero .h2Hero, .hero .containerHero .h3Hero {
+      margin: 0.3rem; }
+
 /*grid home*/
 .body {
   display: grid;
@@ -85,27 +151,6 @@
   display: grid;
   grid-template-areas: "imgNosotros01" "textNosotros01" "imgNosotros02" "textNosotros02" "imgNosotros03" "textNosotros03";
   font-family: 'Hubballi', cursive; }
-
-.card {
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0.5rem;
-  padding: 0.6rem;
-  max-width: 9rem; }
-  .card img {
-    width: 9rem;
-    border-radius: 10px; }
-  .card .cardTitle {
-    font-size: 1.3rem; }
-  .card .cardText {
-    margin-top: 0.3rem;
-    font-size: 1.2rem;
-    max-width: 15rem; }
-  .card .cardPrice {
-    color: #050505;
-    font-size: 1.3rem;
-    font-weight: 900;
-    margin-top: 0.3rem; }
 
 .headerPages {
   padding: o;
@@ -156,6 +201,8 @@ footer {
     margin: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3); }
+    .hero .containerHero .h1Hero, .hero .containerHero .h2Hero, .hero .containerHero .h3Hero {
+      margin: 0.3rem; }
 
 .body {
   padding: 1.6rem 1rem;
@@ -198,7 +245,7 @@ footer {
     text-decoration: none;
     color: black; }
   .body img {
-    width: 20rem;
+    width: 18rem;
     border-radius: 20px; }
 
 .cardProducts {
@@ -323,21 +370,8 @@ form {
   width: 20rem;
   border-radius: 20px; }
 
-.navbar {
-  padding: 0;
-  border-bottom: solid 0.2rem #1f1f1f; }
-  .navbar .nav-tips {
-    background-color: #6a794b; }
-  .navbar img {
-    width: 5rem; }
-
-.carousel {
-  max-width: 60rem;
-  max-height: 60rem;
-  margin: auto; }
-
-/*pantallas +600px*/
-@media screen and (min-width: 600px) {
+/*pantallas +650px*/
+@media screen and (min-width: 650px) {
   /*nav y logo*/
   .logo {
     margin-top: 12rem; }
@@ -348,10 +382,11 @@ form {
   .menu ul ul li {
     width: 5.9rem; }
   /*hero*/
+  .h1Hero {
+    font-size: 2.6rem; }
   .h2Hero {
     font-size: 2.5rem; }
   .h3Hero {
-    font-weight: 900;
     font-size: 1.6rem; }
   /*body home*/
   .body {
@@ -364,13 +399,13 @@ form {
     .body a {
       font-size: 1.4rem; }
     .body img {
-      width: 22rem; }
+      width: 20rem; }
     .body .imgBody01, .body .imgBody02, .body .imgBody03, .body .imgBody04 {
       justify-content: start;
       margin: 0 0.5rem 2rem 0.5rem; }
   /*productos estacados*/
-  .titleCardProducts {
-    font-size: 2rem; }
+  .cardProducts .titleCardProducts {
+    font-size: 2.3rem; }
   .cardProducts .cards {
     flex-flow: row wrap;
     align-items: inherit; }
@@ -463,6 +498,8 @@ form {
   .menu ul ul li {
     width: 7.1rem; }
   /*hero*/
+  .h1Hero {
+    font-size: 3.2rem; }
   .h2Hero {
     font-size: 3rem; }
   .h3Hero {
@@ -485,9 +522,9 @@ form {
     .body .imgBody01, .body .imgBody02, .body .imgBody03, .body .imgBody04 {
       margin: 0 1rem 3rem 1rem; }
   /*productos estacados*/
-  .titleCardProducts {
+  .cardProducts .titleCardProducts {
     font-size: 3rem; }
-  .cards {
+  .cardProducts .cards {
     justify-content: center; }
   /*footer*/
   footer {

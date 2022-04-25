@@ -1,27 +1,35 @@
-/*pantallas +600px*/
-@media screen and(min-width:600px){
+/*pantallas +650px*/
+@media screen and(min-width:650px){
     /*nav y logo*/
     .logo {
         margin-top: 12rem;
-        a img{
-            height: 7.8rem;
+        a{
+            img{
+                height: 7.8rem;
+            }
         }
     }  
     .menu {
         a{
             font-size: 1.3rem;
         }
-        ul ul li{
-            width: 5.9rem;
+        ul{
+            ul{
+                li{
+                    width: 5.9rem;
+                }
+            }
         }
     }
   
     /*hero*/
+    .h1Hero{
+        font-size: 2.6rem;
+    }
     .h2Hero{
         font-size: 2.5rem;
     }
     .h3Hero{
-        font-weight:900;
         font-size: 1.6rem;
     }
 
@@ -43,7 +51,7 @@
             font-size: 1.4rem;
         }
         img{
-            width: 22rem;
+            width: 20rem;
         }
         .imgBody01, .imgBody02, .imgBody03, .imgBody04{
             justify-content: start;
@@ -53,10 +61,11 @@
 
     /*productos estacados*/
     
-    .titleCardProducts{
-      font-size: 2rem;
-    }
+    
     .cardProducts{
+        .titleCardProducts{
+            font-size: 2.3rem;
+        }
         .cards{
             flex-flow: row wrap;
             align-items: inherit;
@@ -77,8 +86,12 @@
         display: flex;
         flex-flow: row-reverse;
         justify-content:space-between;
-        .logoPages a img{
-            height: 4rem;
+        .logoPages{
+            a{
+                img{
+                    height: 4rem;
+                }
+            }
         }
     }
     
@@ -205,6 +218,9 @@
     }
    
    /*hero*/
+   .h1Hero{
+       font-size: 3.2rem;
+   }
    .h2Hero{
         font-size: 3rem;
     }
@@ -238,13 +254,15 @@
     }
 
    /*productos estacados*/
-   
+
+   .cardProducts{
     .titleCardProducts{
         font-size: 3rem;
     }
     .cards{
         justify-content: center;
     }
+   }
  
    /*footer*/
     footer{
