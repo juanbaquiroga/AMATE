@@ -18,23 +18,40 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid nav-tips">
-                <img src="../img/logos/logo05.png" class="navbar-brand" href="#">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        <a class="nav-link" href="Productos.html">productos</a>
-                        <a class="nav-link" href="SobreNosotros.html">sobre nosotros</a>
-                        <a class="nav-link " href="Tips.html">tips</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <header class="headerPages" >
+        <div class="logoPages">
+            <a href="../index.html">
+                <img src="../img/logos/logo06.png" alt="logo de la pagina">
+            </a>
+        </div>
+        
+        <div class="menuPages">
+            <nav class="menu">
+                <ul>
+                    <li class="menuItem">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="menuItem2">
+                        <a href="Productos.html">Productos</a>
+                        <ul class="menuSublist">
+                            <li class="menuSublistItem"><a href="Productos.html#mates">Mates</a></li>
+                            <li class="menuSublistItem"><a href="Productos.html#bombillas">Bombillas</a></li>
+                            <li class="menuSublistItem"><a href="Productos.html#termos">Termos</a></li>
+                            <li class="menuSublistItem"><a href="Productos.html#combos">Combos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <a href="SobreNosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="Tips.html">Tips materos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="bodyPages">
@@ -97,6 +114,11 @@
 
     <footer>
         <p>© todos los derechos reservados | autor del sitio: J.B Quiroga</p>
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank"><img src="img/redes/facebook.png" alt="logo facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/redes/instagram.png" alt="logo instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="img/redes/linkedin.png" alt="logo linkedin"></a>
+        </div>
     </footer>
 <!-- link js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,11 +1,15 @@
 footer{
     background-color: rgb(10,10,10);
-    height: 3rem;
-    display: flex;
+    height: 4rem;
+    display:flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     p{
         font-size:0.8rem;
+    }
+    img{
+        width: 2rem;
     }
 }
   

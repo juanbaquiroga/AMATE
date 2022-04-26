@@ -4,14 +4,27 @@
     display: flex;
     flex-flow: row-reverse;
     justify-content:space-between;
+    align-items:center;
     background-color: $color_bg;
+    .menu{
+        ul{
+            margin: 0;
+            padding-left: 0;
+        }
+        a{
+            color: $color_text;
+        }
+    }
     .logoPages{
-        a img{
-            height: 65px;
+        a {
+            img{
+                height: 65px;
+                &:hover{
+                    transform: scale(115%);
+                    transition: 0.5s;
+                }
+            }
         }
-        &:hover{
-            transform: scale(115%);
-            transition: 0.5s;
-        }
+        
     }
 }

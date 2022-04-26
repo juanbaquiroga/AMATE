@@ -158,24 +158,34 @@
   display: flex;
   flex-flow: row-reverse;
   justify-content: space-between;
+  align-items: center;
   background-color: #6a794b; }
+  .headerPages .menu ul {
+    margin: 0;
+    padding-left: 0; }
+  .headerPages .menu a {
+    color: #e5dac7; }
   .headerPages .logoPages a img {
     height: 65px; }
-  .headerPages .logoPages:hover {
-    transform: scale(115%);
-    transition: 0.5s; }
+    .headerPages .logoPages a img:hover {
+      transform: scale(115%);
+      transition: 0.5s; }
 
 .bodyPages {
-  background-color: #6a794b; }
+  background-color: #6a794b;
+  padding: 2rem 0; }
 
 footer {
   background-color: #0a0a0a;
-  height: 3rem;
+  height: 4rem;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center; }
   footer p {
     font-size: 0.8rem; }
+  footer img {
+    width: 2rem; }
 
 .logo {
   position: absolute;
@@ -256,8 +266,9 @@ footer {
     text-align: center; }
   .cardProducts .cards {
     display: flex;
-    flex-flow: column;
-    align-items: center; }
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: inherit; }
 
 .bodyProductos {
   background-color: #6a794b; }
@@ -406,9 +417,6 @@ form {
   /*productos estacados*/
   .cardProducts .titleCardProducts {
     font-size: 2.3rem; }
-  .cardProducts .cards {
-    flex-flow: row wrap;
-    align-items: inherit; }
   /*footer*/
   footer {
     height: 4rem; }
@@ -524,8 +532,6 @@ form {
   /*productos estacados*/
   .cardProducts .titleCardProducts {
     font-size: 3rem; }
-  .cardProducts .cards {
-    justify-content: center; }
   /*footer*/
   footer {
     height: 5rem; }

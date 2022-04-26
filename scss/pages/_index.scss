@@ -64,7 +64,8 @@
     }
     .cards{
         display: flex;
-        flex-flow: column;
-        align-items: center;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: inherit;
     }
 }
