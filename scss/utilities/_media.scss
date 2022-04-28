@@ -70,7 +70,7 @@
   
     /*footer*/
     footer{
-      height: 4rem;
+        height: 4rem;
         p{
             font-size: 1.3rem;
         }
@@ -94,31 +94,31 @@
   
     /*fuentes*/
     .title{
-      text-align: center;
-      font-size: 3.4rem;
-      padding: 0.7rem 0
+        text-align: center;
+        font-size: 3.4rem;
+        padding: 0.7rem 0
     }
     .subtitle{
-      text-align: start;
-      font-size: 2.6rem;
+        text-align: start;
+        font-size: 2.6rem;
     }
     .textoPages{
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
   
     /*productos*/
   
     .productosMates{
-      padding: 2rem 0;
+        padding: 2rem 0;
     }
     .productosTermos{
-      padding: 2rem 0;
+        padding: 2rem 0;
     }
     .productosCombos{
-      padding: 2rem 0;
+        padding: 2rem 0;
     }
     .productosBombillas{
-      padding: 2rem 0;
+        padding: 2rem 0;
     }
     
     .card{
@@ -200,16 +200,22 @@
 
    .logo {
         margin-top: 14rem;
-        a img{
-            height: 8.4rem;
+        a {
+            img{
+                height: 8.4rem;
+            }
         }
     }  
    .menu {
         a{
             font-size: 1.6rem;
         }
-        ul ul li{
-            width: 7.1rem;
+        ul {
+            ul {
+                li{
+                    width: 7.1rem;
+                }
+            }
         }
     }
    
@@ -226,7 +232,7 @@
  
    /*body home*/
    .body{
-        padding: 2.6rem 5rem;
+        padding: 2.6rem 10rem;
         h3{
             font-size: 2.5rem;
         }
@@ -235,14 +241,9 @@
         }
         a{
             font-size: 1.8rem;
-            &:hover{
-                background-color: rgba(229, 218, 199, 0.5);
-                border-radius: 5px;
-                padding: 5px;
-            }
         }
         img{
-            width: 25rem;
+            min-width: 25rem;
         }
         .imgBody01, .imgBody02, .imgBody03, .imgBody04{
             margin:0 1rem 3rem 1rem;
@@ -316,6 +317,7 @@
             font-size: 2rem;
             margin-top: 0.8rem;
         }
+
     }
 
  
@@ -335,6 +337,7 @@
         p{
             font-size: 1.6rem;
         }
+        
     }
 
    /*contacto*/

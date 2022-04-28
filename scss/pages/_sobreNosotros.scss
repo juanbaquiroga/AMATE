@@ -4,8 +4,7 @@
   }
   .imgNosotros01{
     grid-area: imgNosotros01;
-    display: flex;
-    justify-content: start;
+    @include img-izq;
   }
   .textNosotros01{
     grid-area: textNosotros01;
@@ -14,8 +13,7 @@
   }
   .imgNosotros02{
     grid-area: imgNosotros02;
-    display: flex;
-    justify-content: end;
+    @include img-der;
   }
   .textNosotros02 {
     grid-area: textNosotros02;
@@ -25,8 +23,7 @@
   }
   .imgNosotros03{
     grid-area: imgNosotros03;
-    display: flex;
-    justify-content: start;
+    @include img-izq;
   }
   .textNosotros03{
     grid-area: textNosotros03;
@@ -34,7 +31,9 @@
     margin-bottom: 20px;
   }
   
-  .infoNosotros img{
-    width: 20rem;
-    border-radius: 20px;
+  .infoNosotros{ 
+    img{
+      width: 20rem;
+      border-radius: 20px;
+    }
   }

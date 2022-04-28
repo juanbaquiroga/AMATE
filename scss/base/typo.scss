@@ -23,8 +23,7 @@
     font-weight: 900;
 }
 .h2Hero{
-    font-size: 2rem;
-    font-weight: 900;
+    @extend .h1Hero
 }
 .h3Hero{
     font-weight:900;

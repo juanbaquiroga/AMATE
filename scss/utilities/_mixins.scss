@@ -1,0 +1,8 @@
+@mixin img-izq{
+    display: flex;
+    justify-content: start;
+}
+@mixin img-der{
+    display: flex;
+    justify-content: end;
+}
