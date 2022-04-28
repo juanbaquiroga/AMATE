@@ -88,17 +88,17 @@
   .menu a {
     display: inline-block;
     text-decoration: none;
-    padding: 5px; }
+    padding: 0.3rem; }
   .menu ul {
     list-style: none; }
     .menu ul li {
       position: relative;
       float: left;
       margin: 0;
-      padding: 5px 10px;
+      padding: 0.3rem 0.7rem;
       transition: 250ms; }
       .menu ul li:hover {
-        background: rgba(229, 218, 199, 0.6); }
+        background-color: rgba(229, 218, 199, 0.6); }
       .menu ul li:hover > ul {
         display: block; }
     .menu ul ul {
@@ -114,11 +114,11 @@
         width: 4.7rem;
         transition: 250ms; }
         .menu ul ul li:hover {
-          background-color: rgba(229, 218, 199, 0.5); }
+          background-color: rgba(229, 218, 199, 0.35); }
       .menu ul ul a {
         color: #272727;
         line-height: 120%;
-        padding: 10px 15px; }
+        padding: 0.7rem 1rem; }
 
 .hero {
   display: flex;
@@ -131,7 +131,7 @@
   flex-flow: column; }
   .hero .containerHero {
     padding: 1.3rem;
-    border-radius: 15px;
+    border-radius: 1rem;
     margin: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3); }
@@ -164,10 +164,8 @@
   .headerPages .menu ul {
     margin: 0;
     padding-left: 0; }
-  .headerPages .menu a {
-    color: #e5dac7; }
   .headerPages .logoPages a img {
-    height: 65px; }
+    height: 4rem; }
     .headerPages .logoPages a img:hover {
       transform: scale(115%);
       transition: 0.5s; }
@@ -238,7 +236,7 @@ footer {
       background-position-x: left; }
   .body img {
     width: 18rem;
-    border-radius: 20px; }
+    border-radius: 1.3rem; }
 
 .cardProducts {
   background-color: #6a794b; }
@@ -291,9 +289,9 @@ form {
   align-items: center;
   margin: 5rem 1rem; }
   form fieldset {
-    padding: 20px;
+    padding: 1.3rem;
     border: solid 0.4rem #4c5736;
-    border-radius: 30px 2px; }
+    border-radius: 2rem 0.15rem; }
     form fieldset legend {
       text-align: initial;
       padding: 0.4rem; }
@@ -301,29 +299,29 @@ form {
       border: none;
       margin: 0.3rem 0; }
       form fieldset .elementoFormulario label {
-        font-size: 20px; }
+        font-size: 1.3rem; }
       form fieldset .elementoFormulario input {
         background-color: #4c5736;
         padding: 0.4rem;
-        border-radius: 15px 15px;
+        border-radius: 1rem;
         border: none; }
       form fieldset .elementoFormulario select {
         background-color: #4c5736;
         font-family: 'Hubballi', cursive;
-        font-size: 15px;
+        font-size: 1rem;
         padding: 0.2rem; }
       form fieldset .elementoFormulario .botonContacto {
-        border-radius: 30px;
+        border-radius: 2rem;
         border: none;
         padding: 0.4rem;
         font-family: 'Hubballi', cursive;
-        font-size: 20px; }
+        font-size: 1.3rem; }
 
 .formaContacto {
   background-color: #6a794b;
   padding: 1rem 0.3rem 14rem 0; }
   .formaContacto p {
-    font-size: 20px; }
+    font-size: 1.3rem; }
 
 .infoNosotros {
   background-color: #6a794b;
@@ -337,7 +335,7 @@ form {
 .textNosotros01 {
   grid-area: textNosotros01;
   text-align: start;
-  margin-bottom: 20px; }
+  margin-bottom: 1.3rem; }
 
 .imgNosotros02 {
   grid-area: imgNosotros02;
@@ -347,7 +345,7 @@ form {
 .textNosotros02 {
   grid-area: textNosotros02;
   text-align: end;
-  margin-bottom: 20px; }
+  margin-bottom: 1.3rem; }
 
 .imgNosotros03 {
   grid-area: imgNosotros03;
@@ -357,11 +355,11 @@ form {
 .textNosotros03 {
   grid-area: textNosotros03;
   text-align: start;
-  margin-bottom: 20px; }
+  margin-bottom: 1.3rem; }
 
 .infoNosotros img {
-  width: 20rem;
-  border-radius: 20px; }
+  width: 1.3rem;
+  border-radius: 1.3rem; }
 
 /*pantallas +650px*/
 @media screen and (min-width: 650px) {

@@ -4,9 +4,9 @@ form{
     align-items: center;
     margin: 5rem 1rem ;
     fieldset{
-        padding: 20px;
+        padding: 1.3rem;
         border: solid 0.4rem  rgb(76, 87, 54);
-        border-radius: 30px 2px;
+        border-radius: 2rem 0.15rem;
         legend{
             text-align:initial;
             padding: 0.4rem;
@@ -15,27 +15,27 @@ form{
             border: none;
             margin: 0.3rem 0;
             label{
-                font-size: 20px;
+                font-size: 1.3rem;
             }
             input{
                 background-color: rgb(76, 87, 54) ;
                 padding: 0.4rem;
-                border-radius: 15px 15px;
+                border-radius: 1rem;
                 border: none;
             }
             select{
                 background-color: rgb(76, 87, 54) ;
                 font-family: 'Hubballi', cursive;
-                font-size: 15px;
+                font-size: 1rem;
                 padding: 0.2rem;
             }
             
             .botonContacto{
-                border-radius: 30px;
+                border-radius: 2rem;
                 border: none;
                 padding: 0.4rem;
                 font-family: 'Hubballi', cursive;
-                font-size: 20px;
+                font-size: 1.3rem;
             }
         }
     }
@@ -44,6 +44,6 @@ form{
     background-color: rgb(106, 121, 75);
     padding: 1rem 0.3rem 14rem 0 ;
     p{
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 }

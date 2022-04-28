@@ -11,14 +11,11 @@
             margin: 0;
             padding-left: 0;
         }
-        a{
-            color: $color_text;
-        }
     }
     .logoPages{
         a {
             img{
-                height: 65px;
+                height: 4rem;
                 &:hover{
                     transform: scale(115%);
                     transition: 0.5s;
