@@ -18,7 +18,9 @@
             }
             ul{
                 li{
-                    color:$color-negro;
+                    a{
+                        color:$color-negro;
+                    }
                 }
             }
         }

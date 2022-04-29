@@ -167,7 +167,7 @@
       box-sizing: content-box; }
       .headerPages .menu ul li a {
         color: #e5dac7; }
-    .headerPages .menu ul ul li {
+    .headerPages .menu ul ul li a {
       color: #272727; }
   .headerPages .logoPages a img {
     height: 4rem; }
