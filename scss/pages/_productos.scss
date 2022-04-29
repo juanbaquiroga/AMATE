@@ -2,6 +2,7 @@
     background-color:$color_bg;
     .title{
         grid-area: title;
+        margin-bottom: 2rem;
     }
     #mates{
         grid-area: mates;

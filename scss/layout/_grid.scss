@@ -31,10 +31,26 @@
 
 .infoNosotros{
     display: grid;
-    grid-template-areas: "imgNosotros01"
-                          "textNosotros01"
-                          "imgNosotros02"
-                          "textNosotros02"
-                          "imgNosotros03"
-                          "textNosotros03";
+    grid-template-areas:    "imgNosotros01"
+                            "textNosotros01"
+                            "imgNosotros02"
+                            "textNosotros02"
+                            "imgNosotros03"
+                            "textNosotros03";
+}
+
+/*grid tips*/
+.bodyTips{
+    display: grid;
+    grid-template-areas:    "titleTip01"
+                            "imgTips01"
+                            "textTips01"
+                            "imgTips02"
+                            "textTips02"
+                            "imgTips03"
+                            "textTips03"
+                            "imgTips04"
+                            "textTips04"
+                            "imgTips05"
+                            "textTips05";
 }

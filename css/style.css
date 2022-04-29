@@ -3,11 +3,8 @@
   margin: 0; }
 
 * {
-  font-family: 'Hubballi', cursive;
+  font-family: "Hubballi", cursive;
   color: #e5dac7; }
-
-.containerHero {
-  font-family: 'Jost', sans-serif; }
 
 .title {
   text-align: center;
@@ -15,7 +12,7 @@
   padding: 0.7rem 0; }
 
 .subtitle {
-  text-align: start;
+  text-align: center;
   font-size: 2rem; }
 
 .text {
@@ -23,10 +20,12 @@
   padding: 0 1rem; }
 
 .h1Hero, .h2Hero {
+  font-family: "Jost", sans-serif;
   font-size: 2rem;
   font-weight: 900; }
 
 .h3Hero {
+  font-family: "Jost", sans-serif;
   font-weight: 900;
   font-size: 1.3rem; }
 
@@ -53,18 +52,13 @@
   .card:hover {
     transform: scale(110%); }
 
-.navbar {
-  padding: 0;
-  border-bottom: solid 0.2rem #1f1f1f; }
-  .navbar .nav-tips {
-    background-color: #6a794b; }
-  .navbar img {
-    width: 5rem; }
-
 .carousel {
-  max-width: 60rem;
-  max-height: 60rem;
-  margin: auto; }
+  max-width: 55rem;
+  max-height: 55rem;
+  margin: auto;
+  padding: 2rem; }
+  .carousel .carousel-inner {
+    border-radius: 2rem; }
 
 .logo {
   position: absolute;
@@ -95,7 +89,7 @@
       position: relative;
       float: left;
       margin: 0;
-      padding: 0.3rem 0.7rem;
+      padding: 0.3rem 0.8rem;
       transition: 250ms; }
       .menu ul li:hover {
         background-color: rgba(229, 218, 199, 0.6); }
@@ -109,7 +103,7 @@
       padding: 0; }
       .menu ul ul li {
         background-color: rgba(229, 218, 199, 0.6);
-        color: #0a0a0a;
+        color: #272727;
         float: none;
         width: 4.7rem;
         transition: 250ms; }
@@ -153,8 +147,13 @@
   display: grid;
   grid-template-areas: "imgNosotros01" "textNosotros01" "imgNosotros02" "textNosotros02" "imgNosotros03" "textNosotros03"; }
 
+/*grid tips*/
+.bodyTips {
+  display: grid;
+  grid-template-areas: "titleTip01" "imgTips01" "textTips01" "imgTips02" "textTips02" "imgTips03" "textTips03" "imgTips04" "textTips04" "imgTips05" "textTips05"; }
+
 .headerPages {
-  padding: o;
+  padding: 0;
   width: 100%;
   display: flex;
   flex-flow: row-reverse;
@@ -164,6 +163,12 @@
   .headerPages .menu ul {
     margin: 0;
     padding-left: 0; }
+    .headerPages .menu ul li {
+      box-sizing: content-box; }
+      .headerPages .menu ul li a {
+        color: #e5dac7; }
+    .headerPages .menu ul ul li {
+      color: #272727; }
   .headerPages .logoPages a img {
     height: 4rem; }
     .headerPages .logoPages a img:hover {
@@ -171,18 +176,20 @@
       transition: 0.5s; }
 
 .bodyPages {
+  font-family: "Hubballi", cursive;
   background-color: #6a794b;
   padding: 2rem 0; }
 
 footer {
-  background-color: #0a0a0a;
-  height: 4.5rem;
+  background-color: #272727;
+  height: 4rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center; }
   footer p {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    margin: 0.4rem 0 0 0; }
   footer img {
     width: 2rem; }
 
@@ -253,7 +260,8 @@ footer {
 .bodyProductos {
   background-color: #6a794b; }
   .bodyProductos .title {
-    grid-area: title; }
+    grid-area: title;
+    margin-bottom: 2rem; }
   .bodyProductos #mates {
     grid-area: mates; }
   .bodyProductos #termos {
@@ -307,15 +315,14 @@ form {
         border: none; }
       form fieldset .elementoFormulario select {
         background-color: #4c5736;
-        font-family: 'Hubballi', cursive;
+        font-family: "Hubballi", cursive;
         font-size: 1rem;
         padding: 0.2rem; }
       form fieldset .elementoFormulario .botonContacto {
         border-radius: 2rem;
         border: none;
         padding: 0.4rem;
-        font-family: 'Hubballi', cursive;
-        font-size: 1.3rem; }
+        font-family: "Hubballi", cursive; }
 
 .formaContacto {
   background-color: #6a794b;
@@ -358,8 +365,64 @@ form {
   margin-bottom: 1.3rem; }
 
 .infoNosotros img {
-  width: 1.3rem;
+  width: 18rem;
   border-radius: 1.3rem; }
+
+.bodyTips {
+  padding: 1.6rem 1rem;
+  background-color: #6a794b; }
+  .bodyTips .title {
+    margin: 2rem 0;
+    font-weight: 900; }
+  .bodyTips .titleTip01 {
+    grid-area: titleTip01;
+    margin-bottom: 2rem;
+    font-weight: bold; }
+  .bodyTips .imgTips01 {
+    grid-area: imgTips01;
+    display: flex;
+    justify-content: start; }
+  .bodyTips .textTips01 {
+    grid-area: textTips01;
+    text-align: start;
+    margin-bottom: 1.3rem; }
+  .bodyTips .imgTips02 {
+    grid-area: imgTips02;
+    display: flex;
+    justify-content: start; }
+  .bodyTips .textTips02 {
+    grid-area: textTips02;
+    text-align: start;
+    margin-bottom: 1.3rem; }
+  .bodyTips .imgTips03 {
+    grid-area: imgTips03;
+    display: flex;
+    justify-content: start; }
+  .bodyTips .textTips03 {
+    grid-area: textTips03;
+    text-align: start;
+    margin-bottom: 1.3rem; }
+  .bodyTips .imgTips04 {
+    grid-area: imgTips04;
+    display: flex;
+    justify-content: start; }
+  .bodyTips .textTips04 {
+    grid-area: textTips04;
+    text-align: start;
+    margin-bottom: 1.3rem; }
+  .bodyTips .imgTips05 {
+    grid-area: imgTips05;
+    display: flex;
+    justify-content: start; }
+  .bodyTips .textTips05 {
+    grid-area: textTips05;
+    text-align: start;
+    margin-bottom: 1.3rem; }
+  .bodyTips img {
+    width: 18rem;
+    border-radius: 20px; }
+  .bodyTips h3 {
+    font-weight: bold; }
 
 /*pantallas +650px*/
 @media screen and (min-width: 650px) {
@@ -399,7 +462,7 @@ form {
     font-size: 2.3rem; }
   /*footer*/
   footer {
-    height: 4rem; }
+    height: 5rem; }
     footer p {
       font-size: 1.3rem; }
   /*header pages*/
@@ -409,7 +472,7 @@ form {
     justify-content: space-between; }
     .headerPages .logoPages a img {
       height: 4rem; }
-  /*fuentes*/
+  /*typo*/
   .title {
     text-align: center;
     font-size: 3.4rem;
@@ -472,7 +535,15 @@ form {
     margin: 0 0 0 1rem; }
     .formaContacto p {
       font-size: 1.7rem;
-      margin: 2rem 0; } }
+      margin: 2rem 0; }
+  /*tips*/
+  .bodyTips {
+    padding: 2.6rem 2rem;
+    grid-template-areas: "titleTip01 titleTip01 titleTip01" "imgTips01 textTips01 textTips01" "imgTips02 textTips02 textTips02" "imgTips03 textTips03 textTips03" "imgTips04 textTips04 textTips04" "imgTips05 textTips05 textTips05"; }
+    .bodyTips .imgTips01, .bodyTips .imgTips02, .bodyTips .imgTips03, .bodyTips .imgTips04, .bodyTips .imgTips05 {
+      margin: 0 0.5rem 2rem 1rem; }
+    .bodyTips img {
+      width: 22rem; } }
 
 /*pantallas +1024px*/
 @media only screen and (min-width: 1024px) {
@@ -510,9 +581,11 @@ form {
     font-size: 3rem; }
   /*footer*/
   footer {
-    height: 5rem; }
+    height: 5.7rem; }
     footer p {
       font-size: 1.8rem; }
+    footer img {
+      width: 2.5rem; }
   /*header pages*/
   .logoPages a img {
     height: 5rem; }
@@ -572,4 +645,11 @@ form {
     margin: 0 0 0 2rem; }
     .formaContacto p {
       font-size: 2rem;
-      margin: 1rem 0 4rem 0; } }
+      margin: 1rem 0 4rem 0; }
+  /*tips*/
+  .bodyTips {
+    padding: 3.6rem 5rem; }
+    .bodyTips .imgTips01, .bodyTips .imgTips02, .bodyTips .imgTips03, .bodyTips .imgTips04, .bodyTips .imgTips05 {
+      margin: 0 0.5rem 3rem 1rem; }
+    .bodyTips img {
+      width: 25rem; } }

@@ -1,15 +1,26 @@
 .headerPages{
-    padding: o;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-flow: row-reverse;
     justify-content:space-between;
     align-items:center;
-    background-color: $color_bg;
+    background-color: $color-bg;
     .menu{
         ul{
             margin: 0;
             padding-left: 0;
+            li{
+                box-sizing:content-box;
+                a{
+                    color: $color-text;
+                }
+            }
+            ul{
+                li{
+                    color:$color-negro;
+                }
+            }
         }
     }
     .logoPages{

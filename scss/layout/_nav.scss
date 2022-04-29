@@ -19,7 +19,7 @@
             position: relative;
             float: left;
             margin:0;
-            padding: 0.3rem 0.7rem;
+            padding: 0.3rem 0.8rem;
             transition: 250ms;
             &:hover{
                 background-color: map-get($map: $color-nav , $key: bg-standar );
@@ -36,7 +36,7 @@
             padding: 0;
             li{
                 background-color: map-get($map: $color-nav , $key: bg-standar );
-                color: rgb(10, 10, 10);
+                color: $color-negro;
                 float: none;
                 width: 4.7rem;
                 transition: 250ms; 
@@ -45,7 +45,7 @@
                 }
             }
             a{
-                color: rgb(39, 39, 39);
+                color: $color-negro;
                 line-height: 120%;
                 padding: 0.7rem 1rem;
             }

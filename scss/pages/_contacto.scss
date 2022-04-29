@@ -5,7 +5,7 @@ form{
     margin: 5rem 1rem ;
     fieldset{
         padding: 1.3rem;
-        border: solid 0.4rem  rgb(76, 87, 54);
+        border: solid 0.4rem $color-botones-contacto;
         border-radius: 2rem 0.15rem;
         legend{
             text-align:initial;
@@ -18,14 +18,14 @@ form{
                 font-size: 1.3rem;
             }
             input{
-                background-color: rgb(76, 87, 54) ;
+                background-color: $color-botones-contacto;
                 padding: 0.4rem;
                 border-radius: 1rem;
                 border: none;
             }
             select{
-                background-color: rgb(76, 87, 54) ;
-                font-family: 'Hubballi', cursive;
+                background-color: $color-botones-contacto;
+                font-family: $fuente-1;
                 font-size: 1rem;
                 padding: 0.2rem;
             }
@@ -34,14 +34,13 @@ form{
                 border-radius: 2rem;
                 border: none;
                 padding: 0.4rem;
-                font-family: 'Hubballi', cursive;
-                font-size: 1.3rem;
+                font-family: $fuente-1;
             }
         }
     }
 }
 .formaContacto{
-    background-color: rgb(106, 121, 75);
+    background-color: $color-bg;
     padding: 1rem 0.3rem 14rem 0 ;
     p{
         font-size: 1.3rem;

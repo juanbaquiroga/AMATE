@@ -1,9 +1,6 @@
 *{
-    font-family: 'Hubballi', cursive;
+    font-family: $fuente-1;
     color:$color-text;
-}
-.containerHero{
-    font-family: 'Jost', sans-serif;
 }
 .title{
     text-align: center;
@@ -11,7 +8,7 @@
     padding: 0.7rem 0
 }
 .subtitle{
-    text-align: start;
+    text-align: center;
     font-size: 2rem;
 }
 .text{
@@ -19,6 +16,7 @@
     padding: 0 1rem;
 }
 .h1Hero{
+    font-family:$fuente-2;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -26,6 +24,7 @@
     @extend .h1Hero
 }
 .h3Hero{
+    font-family:$fuente-2;
     font-weight:900;
     font-size: 1.3rem;
 }

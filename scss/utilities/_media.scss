@@ -70,7 +70,7 @@
   
     /*footer*/
     footer{
-        height: 4rem;
+        height: 5rem;
         p{
             font-size: 1.3rem;
         }
@@ -92,7 +92,7 @@
     }
     
   
-    /*fuentes*/
+    /*typo*/
     .title{
         text-align: center;
         font-size: 3.4rem;
@@ -191,6 +191,23 @@
             margin: 2rem 0;
         }
     }
+
+    /*tips*/
+    .bodyTips{
+        padding: 2.6rem 2rem;    
+        grid-template-areas:    "titleTip01 titleTip01 titleTip01"
+                                "imgTips01 textTips01 textTips01"
+                                "imgTips02 textTips02 textTips02"
+                                "imgTips03 textTips03 textTips03"
+                                "imgTips04 textTips04 textTips04"
+                                "imgTips05 textTips05 textTips05";
+        .imgTips01, .imgTips02, .imgTips03, .imgTips04, .imgTips05{
+            margin: 0 0.5rem 2rem 1rem ;
+        }
+        img{
+            width: 22rem;
+        }
+    }
 }
 
  /*pantallas +1024px*/
@@ -260,16 +277,23 @@
  
    /*footer*/
     footer{
-        height: 5rem;
+        height: 5.7rem;
         p{
             font-size: 1.8rem;
+        }
+        img{
+            width: 2.5rem;
         }
     }
 
    /*header pages*/
  
-    .logoPages a img{
-        height: 5rem;
+    .logoPages{
+        a{
+            img{
+                height: 5rem;
+            }
+        }
     }
  
    /*fuentes*/
@@ -364,6 +388,18 @@
         p{
             font-size: 2rem;
             margin: 1rem 0 4rem 0;
+        }
+    }
+
+
+    /*tips*/
+    .bodyTips{
+        padding: 3.6rem 5rem;
+        .imgTips01, .imgTips02, .imgTips03, .imgTips04, .imgTips05{
+            margin: 0 0.5rem 3rem 1rem ;
+        }
+        img{
+            width: 25rem;
         }
     }
 }
