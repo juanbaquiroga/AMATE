@@ -55,7 +55,7 @@
 .carousel {
   max-width: 55rem;
   max-height: 55rem;
-  margin: auto;
+  margin: 3rem auto;
   padding: 2rem; }
   .carousel .carousel-inner {
     border-radius: 2rem; }
@@ -542,6 +542,10 @@ form {
     grid-template-areas: "titleTip01 titleTip01 titleTip01" "imgTips01 textTips01 textTips01" "imgTips02 textTips02 textTips02" "imgTips03 textTips03 textTips03" "imgTips04 textTips04 textTips04" "imgTips05 textTips05 textTips05"; }
     .bodyTips .imgTips01, .bodyTips .imgTips02, .bodyTips .imgTips03, .bodyTips .imgTips04, .bodyTips .imgTips05 {
       margin: 0 0.5rem 2rem 1rem; }
+    .bodyTips h3 {
+      font-size: 1.8rem; }
+    .bodyTips p {
+      font-size: 1.2rem; }
     .bodyTips img {
       width: 22rem; } }
 
@@ -651,5 +655,9 @@ form {
     padding: 3.6rem 5rem; }
     .bodyTips .imgTips01, .bodyTips .imgTips02, .bodyTips .imgTips03, .bodyTips .imgTips04, .bodyTips .imgTips05 {
       margin: 0 0.5rem 3rem 1rem; }
+    .bodyTips h3 {
+      font-size: 2.5rem; }
+    .bodyTips p {
+      font-size: 1.6rem; }
     .bodyTips img {
       width: 25rem; } }
