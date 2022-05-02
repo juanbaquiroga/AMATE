@@ -482,6 +482,10 @@ form {
     font-size: 2.6rem; }
   .textoPages {
     font-size: 1.5rem; }
+  .text {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5rem; }
   /*productos*/
   .productosMates {
     padding: 2rem 0; }
@@ -599,6 +603,10 @@ form {
   .subtitle {
     font-size: 3rem; }
   .textoPages {
+    font-size: 2rem; }
+  .text {
+    width: 50%;
+    margin: auto;
     font-size: 2rem; }
   /*productos*/
   .productosMates {
