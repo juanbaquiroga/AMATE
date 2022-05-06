@@ -21,8 +21,8 @@
             }
         }
     }
-  
-    /*hero*/
+
+/*hero*/
     .h1Hero{
         font-size: 2.6rem;
     }
@@ -34,7 +34,7 @@
     }
 
 
-    /*body home*/
+/*body home*/
     .body{
         grid-template-areas:  "imgBody01 textBody01 textBody01"
                             "textBody02 textBody02 imgBody02" 
@@ -59,25 +59,25 @@
         }
     }
 
-    /*productos estacados*/
-    
-    
+/*productos estacados*/
+
+
     .cardProducts{
         .titleCardProducts{
             font-size: 2.3rem;
         }
     }
-  
-    /*footer*/
+
+/*footer*/
     footer{
         height: 5rem;
         p{
             font-size: 1.3rem;
         }
     }
-  
-    /*header pages*/
-  
+
+/*header pages*/
+
     .headerPages{
         display: flex;
         flex-flow: row-reverse;
@@ -91,8 +91,8 @@
         }
     }
     
-  
-    /*typo*/
+
+/*typo*/
     .title{
         text-align: center;
         font-size: 3.4rem;
@@ -110,9 +110,9 @@
         margin: auto;
         font-size: 1.5rem;
     }
-  
-    /*productos*/
-  
+
+/*productos*/
+
     .productosMates{
         padding: 2rem 0;
     }
@@ -145,8 +145,8 @@
             margin-top: 0.6rem;
         }
     }
-  
-    /*sobre nosotros*/
+
+/*sobre nosotros*/
     .infoNosotros{
         grid-template-areas: "imgNosotros01 textNosotros01 textNosotros01"
                             "textNosotros02 textNosotros02 imgNosotros02"
@@ -165,10 +165,10 @@
             font-size: 1.2rem;
         }
     }
-   
-  
-  
-    /*contacto*/
+
+
+
+/*contacto*/
     form{
         display: flex;
         justify-content: center;
@@ -221,12 +221,13 @@
     }
 }
 
- /*pantallas +1024px*/
+/*pantallas +1024px*/
 
- @media only screen and (min-width:1024px){
-    /*nav y logo*/
+@media only screen and (min-width:1024px){
 
-   .logo {
+/*nav y logo*/
+
+    .logo {
         margin-top: 14rem;
         a {
             img{
@@ -234,7 +235,7 @@
             }
         }
     }  
-   .menu {
+    .menu {
         a{
             font-size: 1.6rem;
         }
@@ -246,20 +247,20 @@
             }
         }
     }
-   
-   /*hero*/
-   .h1Hero{
-       font-size: 3.2rem;
-   }
-   .h2Hero{
+
+    /*hero*/
+    .h1Hero{
+        font-size: 3.2rem;
+    }
+    .h2Hero{
         font-size: 3rem;
     }
-   .h3Hero{
+    .h3Hero{
         font-size: 2rem;
     }
- 
-   /*body home*/
-   .body{
+
+/*body home*/
+    .body{
         padding: 2.6rem 10rem;
         h3{
             font-size: 2.5rem;
@@ -278,15 +279,15 @@
         }
     }
 
-   /*productos estacados*/
+/*productos estacados*/
 
     .cardProducts{
         .titleCardProducts{
             font-size: 3rem;
         }
     }
- 
-   /*footer*/
+    
+    /*footer*/
     footer{
         height: 5.7rem;
         p{
@@ -297,8 +298,8 @@
         }
     }
 
-   /*header pages*/
- 
+/*header pages*/
+
     .logoPages{
         a{
             img{
@@ -306,9 +307,9 @@
             }
         }
     }
- 
-   /*fuentes*/
- 
+
+/*fuentes*/
+
     .title{
         font-size: 4rem;
     }
@@ -323,9 +324,9 @@
         margin: auto;
         font-size: 2rem;
     }
- 
-   /*productos*/
- 
+
+/*productos*/
+
     .productosMates{
         padding: 2.5rem 0;
     }
@@ -338,7 +339,7 @@
     .productosBombillas{
         padding: 2.5rem 0;
     }
-   
+
     .card{
         margin: 1rem;
         padding: 1rem;
@@ -357,12 +358,11 @@
             font-size: 2rem;
             margin-top: 0.8rem;
         }
-
     }
 
- 
-   /*sobre nosotros*/
-   
+
+/*sobre nosotros*/
+
     .infoNosotros{
         padding: 3.6rem 5rem;
         .imgNosotros01, .imgNosotros02, .imgNosotros03{
@@ -380,8 +380,8 @@
         
     }
 
-   /*contacto*/
-    
+/*contacto*/
+
     form{
         margin: 14rem 1rem ;
         legend{
@@ -397,8 +397,8 @@
             font-size: 2rem;
         }
     }
-    
-   
+
+
     .formaContacto{
         margin: 0 0 0 2rem;
         p{

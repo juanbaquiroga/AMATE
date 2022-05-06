@@ -77,7 +77,6 @@
   justify-content: center; }
 
 .menu {
-  z-index: 2;
   display: absolute; }
   .menu a {
     display: inline-block;
@@ -298,7 +297,7 @@ form {
   margin: 5rem 1rem; }
   form fieldset {
     padding: 1.3rem;
-    border: solid 0.4rem #4c5736;
+    border: solid 0.4rem #485838;
     border-radius: 2rem 0.15rem; }
     form fieldset legend {
       text-align: initial;

@@ -1,12 +1,11 @@
 .header{
-    background-color: $color_bg;
+    background-color: $color-bg;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 .menu {
-    z-index: 2;
     display: absolute;
     a{
     display: inline-block;
