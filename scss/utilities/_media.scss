@@ -16,21 +16,30 @@
         ul{
             ul{
                 li{
-                    width: 5.9rem;
+                    width: 5.85rem;
                 }
             }
         }
     }
 
 /*hero*/
-    .h1Hero{
-        font-size: 2.6rem;
-    }
-    .h2Hero{
-        font-size: 2.5rem;
-    }
-    .h3Hero{
-        font-size: 1.6rem;
+    .hero{
+        .h1Hero{
+            font-size: 2.6rem;
+        }
+        .h2Hero{
+            font-size: 2.5rem;
+        }
+        .h3Hero{
+            font-size: 1.6rem;
+        }
+        .flecha{
+            a{
+                img{
+                    width: 6rem;
+                }
+            }
+        }
     }
 
 
@@ -249,14 +258,23 @@
     }
 
     /*hero*/
-    .h1Hero{
-        font-size: 3.2rem;
-    }
-    .h2Hero{
-        font-size: 3rem;
-    }
-    .h3Hero{
-        font-size: 2rem;
+    .hero{
+        .h1Hero{
+            font-size: 3.2rem;
+        }
+        .h2Hero{
+            font-size: 3rem;
+        }
+        .h3Hero{
+            font-size: 2rem;
+        }
+        .flecha{
+            a{
+                img{
+                    width: 7.5rem;
+                }
+            }
+        }
     }
 
 /*body home*/

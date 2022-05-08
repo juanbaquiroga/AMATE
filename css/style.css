@@ -113,6 +113,9 @@
         line-height: 120%;
         padding: 0.7rem 1rem; }
 
+html {
+  scroll-behavior: smooth; }
+
 .hero {
   display: flex;
   background-image: url(../img/fotos/img1.jpg);
@@ -130,6 +133,11 @@
     background-color: rgba(0, 0, 0, 0.3); }
     .hero .containerHero .h1Hero, .hero .containerHero .h2Hero, .hero .containerHero .h2Hero, .hero .containerHero .h3Hero {
       margin: 0.3rem; }
+  .hero .flecha {
+    display: flex;
+    justify-content: center; }
+    .hero .flecha a img {
+      width: 5rem; }
 
 /*grid home*/
 .body {
@@ -433,14 +441,16 @@ form {
   .menu a {
     font-size: 1.3rem; }
   .menu ul ul li {
-    width: 5.9rem; }
+    width: 5.85rem; }
   /*hero*/
-  .h1Hero, .h2Hero {
+  .hero .h1Hero, .hero .h2Hero {
     font-size: 2.6rem; }
-  .h2Hero {
+  .hero .h2Hero {
     font-size: 2.5rem; }
-  .h3Hero {
+  .hero .h3Hero {
     font-size: 1.6rem; }
+  .hero .flecha a img {
+    width: 6rem; }
   /*body home*/
   .body {
     grid-template-areas: "imgBody01 textBody01 textBody01" "textBody02 textBody02 imgBody02"  "imgBody03 textBody03 textBody03" "textBody04 textBody04 imgBody04";
@@ -564,12 +574,14 @@ form {
   .menu ul ul li {
     width: 7.1rem; }
   /*hero*/
-  .h1Hero, .h2Hero {
+  .hero .h1Hero, .hero .h2Hero {
     font-size: 3.2rem; }
-  .h2Hero {
+  .hero .h2Hero {
     font-size: 3rem; }
-  .h3Hero {
+  .hero .h3Hero {
     font-size: 2rem; }
+  .hero .flecha a img {
+    width: 7.5rem; }
   /*body home*/
   .body {
     padding: 2.6rem 10rem; }

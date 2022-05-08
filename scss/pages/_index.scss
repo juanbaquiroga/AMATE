@@ -1,6 +1,9 @@
+
+
 .body{
     padding: 1.6rem 1rem;
     background-color:$color_bg;
+    
     .imgBody01{
         grid-area: imgBody01;
         @include img-izq;

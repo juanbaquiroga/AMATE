@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .hero{
     display: flex;
     background-image: url(../img/fotos/img1.jpg);
@@ -7,6 +10,7 @@
     background-size: cover;
     background-position: center;
     flex-flow: column ;
+    
     .containerHero{
         padding: 1.3rem;
         border-radius: 1rem;
@@ -17,4 +21,15 @@
             margin: 0.3rem;
         }
     }
+    .flecha{
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                width: 5rem;
+            }
+        }
+    }
+}
+.body{
 }
