@@ -55,6 +55,7 @@
         }
         p{
             font-size: 1.2rem;
+            max-width: 22rem;
         }
         a{
             font-size: 1.4rem;
@@ -62,9 +63,13 @@
         img{
             width: 20rem;
         }
-        .imgBody01, .imgBody02, .imgBody03, .imgBody04{
+        .imgBody01,  .imgBody03{
+            justify-content: end;
+            margin:0 0.5rem 2rem 0;
+        }
+        .imgBody02, .imgBody04{
             justify-content: start;
-            margin:0 0.5rem 2rem 0.5rem;
+            margin:0 0 2rem 0.5rem;
         }
     }
 
@@ -115,8 +120,7 @@
         font-size: 1.5rem;
     }
     .text{
-        width: 60%;
-        margin: auto;
+        padding: 2.5rem;
         font-size: 1.5rem;
     }
 
@@ -161,17 +165,23 @@
                             "textNosotros02 textNosotros02 imgNosotros02"
                             "imgNosotros03 textNosotros03 textNosotros03";
         padding: 2.6rem 2rem;
-        .imgNosotros01, .imgNosotros02, .imgNosotros03{
-            margin: 0 1rem 2rem 1rem;
+        .imgNosotros01, .imgNosotros03{
+            justify-content: end;
+            margin:0 0.5rem 3rem 0;
+        }
+        .imgNosotros02{
+            justify-content: start;
+            margin:0 0 3rem 0.5rem;
         }
         img{
-            width: 22rem;
+            width: 20rem;
         }
         h2{
             font-size: 2rem;
         }
         p{
             font-size: 1.2rem;
+            max-width: 22rem;
         }
     }
 
@@ -284,6 +294,7 @@
             font-size: 2.5rem;
         }
         p{
+            max-width: 34rem;
             font-size: 1.6rem;
         }
         a{
@@ -292,8 +303,13 @@
         img{
             min-width: 25rem;
         }
-        .imgBody01, .imgBody02, .imgBody03, .imgBody04{
-            margin:0 1rem 3rem 1rem;
+        .imgBody01,  .imgBody03{
+            justify-content: end;
+            margin:0 1rem 3.5rem 0;
+        }
+        .imgBody02, .imgBody04{
+            justify-content: start;
+            margin:0 0 3.5rem 1rem;
         }
     }
 
@@ -338,9 +354,9 @@
         font-size: 2rem;
     }
     .text{
-        width: 50%;
         margin: auto;
-        font-size: 2rem;
+        max-width: 60%;
+        font-size: 1.8rem;
     }
 
 /*productos*/
@@ -383,8 +399,14 @@
 
     .infoNosotros{
         padding: 3.6rem 5rem;
-        .imgNosotros01, .imgNosotros02, .imgNosotros03{
-            margin: 0 1rem 3rem 1rem;
+        
+        .imgNosotros01, .imgNosotros03{
+            justify-content: end;
+            margin:0 1rem 3rem 0;
+        }
+        .imgNosotros02{
+            justify-content: start;
+            margin:0 0 3rem 1rem;
         }
         img{
             width: 25rem;
@@ -394,6 +416,7 @@
         }
         p{
             font-size: 1.6rem;
+            max-width: 34rem;
         }
         
     }

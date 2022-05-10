@@ -3,15 +3,20 @@
 .body{
     padding: 1.6rem 1rem;
     background-color:$color_bg;
-    
+    img{
+        width: 18rem;
+        border-radius: 1.3rem;
+    }
+    p{
+        max-width: 18rem;
+    }
     .imgBody01{
         grid-area: imgBody01;
         @include img-izq;
     }
     .textBody01{
         grid-area: textBody01;
-        text-align: start;
-        margin-bottom: 1.3rem;
+        @include text-izq;
     }
     .imgBody02{
         grid-area: imgBody02;
@@ -19,8 +24,7 @@
     }
     .textBody02 {
         grid-area: textBody02;
-        text-align: end;
-        margin-bottom: 1.3rem;
+        @include text-der;
     }
     .imgBody03{
         grid-area: imgBody03;
@@ -28,8 +32,7 @@
     }
     .textBody03{
         grid-area: textBody03;
-        text-align: start;
-        margin-bottom: 1.3rem;
+        @include text-izq;
     }
     .imgBody04{
         grid-area: imgBody04;
@@ -37,8 +40,7 @@
     }
     .textBody04 {
         grid-area: textBody04;
-        text-align: end;
-        margin-bottom: 1.3rem;
+        @include text-der;
     }
     .enlaceBody{
         background-image: linear-gradient(transparent 0%, transparent 90%, $color-text 90%, $color-text 100%);
@@ -48,17 +50,13 @@
         transition: background-size 400ms;
 
         font-weight: 900;
-        margin-top: 1rem;
+        margin-top: 0.2rem;
         text-decoration: none ;
         color: black;
         &:hover{
             background-size: 100% 100%;
             background-position-x: left;
         }
-    }
-    img{
-        width: 18rem;
-        border-radius: 1.3rem;
     }
 }
 
