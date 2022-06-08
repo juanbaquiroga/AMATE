@@ -44,3 +44,17 @@ body{
     max-width: 100%;
     border-radius: 1rem;
 }
+.formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 3rem;
+    border: solid 0.2rem rgb(49, 49, 49);
+}
+
+.title, legend{
+    text-align: center;
+}
+select, option, input, legend h4{
+    color: rgb(20, 20, 20);
+}

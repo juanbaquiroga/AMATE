@@ -17,14 +17,12 @@ from django.conf.urls.static import static
 from xml.dom.minidom import Document
 from django.contrib import admin
 from django.conf import settings
-from django.urls import path,include
-
-
+from django.urls import path, include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', include('Home.urls')),
+    path('home/', include('Home.urls')),
     path('products/', include('Productos.urls')),
 ]
 

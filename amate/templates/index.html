@@ -4,7 +4,7 @@
 {% endblock %}
 {% block contenido %}
 
-{% for publicacion in publicaciones %}
+{% for publicacion in object_list %}
     <div class="publicacion">
         <div class="imgBody">
             <img src="{{ publicacion.image.url }}" alt="{{publicacion.title}}">

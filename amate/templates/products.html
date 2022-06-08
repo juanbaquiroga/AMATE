@@ -6,15 +6,15 @@
     <h2 class="subtitle" id="mates">Mates</h2>
     <!--mates-->
     <div class="productosMates">
-        {%for producto in productos%}
+        {%for producto in object_list%}
             {% if producto.category.name == 'Mate' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
-                        <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
-                        <a href="#" class="btn btn-primary">comprar</a>
+                        <p class="card-text cardPrice" ><small class="text-muted">${{producto.price}}</small></p>
+                        <a href="/products/detail-product/{{producto.pk}}/" class="btn btn-primary">Ver mas!</a>
                     </div>
                 </div>
             {% endif %}
@@ -25,15 +25,15 @@
 
     
     <div class="productosTermos">
-        {%for producto in productos%}
+        {% for producto in object_list %}
             {% if producto.category.name == 'Termo' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{producto.imagen.url}}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
                         <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
-                        <a href="#" class="btn btn-primary">comprar</a>
+                        <a href="/products/detail-product/{{product.pk}}/" class="btn btn-primary">Ver mas!</a>
                     </div>
                 </div>
             {%endif%}
@@ -42,15 +42,15 @@
     <!--combos-->
     <h2 class="subtitle" id="combos">Combos</h2>
     <div class="productosCombos">
-        {%for producto in productos%}
+        {%for producto in object_list%}
             {% if producto.category.name == 'Combo' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
                         <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
-                        <a href="#" class="btn btn-primary">comprar</a>
+                        <a href="/products/detail-product/{{product.pk}}/" class="btn btn-primary">Ver mas!</a>
                     </div>
                 </div>
             {%endif%}
@@ -59,15 +59,15 @@
     <!--bombillas-->
     <h2 class="subtitle" id="bombillas">Bombillas</h2>
     <div class="productosBombillas">
-        {%for producto in productos%}
+        {%for producto in object_list%}
             {% if producto.category.name == 'Bombilla' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
                         <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
-                        <a href="#" class="btn btn-primary">comprar</a>
+                        <a href="/products/detail-product/{{product.pk}}/" class="btn btn-primary">Ver mas!</a>
                     </div>
                 </div>
             {%endif%}

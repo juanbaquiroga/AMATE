@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Detalle de publicacion
+{% endblock %}
+
+{% block contenido %}
+    <h1 class="title" style="margin-left:30rem">Aca va el contenido de detalles de productos</h1>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{ object.imagen.url }}" class="img-fluid" alt="{{object.name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{object.name}}</h5>
+            <p class="card-text">{{object.description}}</p>
+            <p class="card-text cardPrice"><small class="text-muted">${{object.price}}</small></p>
+            <a href="/products/update-product/{{object.pk}}/" class="btn btn-primary">Editar</a>
+            <a href="/products/delete-product/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
+        </div>
+    </div>
+
+{% endblock %}
