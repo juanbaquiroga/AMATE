@@ -16,7 +16,6 @@ class categoria(models.Model):
 
 class producto(models.Model):
     name = models.CharField(max_length=40)
-    image = models.ImageField(upload_to='productos', null=True, blank= True)
     price = models.FloatField()
     description = models.CharField(max_length=200, blank=True, null=True)
     category = models.ForeignKey(categoria,  on_delete=models.CASCADE)

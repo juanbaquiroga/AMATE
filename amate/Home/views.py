@@ -5,37 +5,33 @@ from django.views.generic import ListView, DetailView, CreateView, DeleteView, U
 # Create your views here.
 
 
-class Publications_list(ListView):
-        model = Publicacion
-        template_name = 'index.html'
-        queryset = Publicacion.objects.filter(active = True)
+class List_publications(ListView):
+    model = Publicacion
+    template_name = 'index.html'
+    queryset = Publicacion.objects.filter(active = True)
 
-class Detail_Publication(DetailView):
-        model = Publicacion
-        template_name = 'detail_Publication.html'
-# class Detail_product(DetailView):
-#     model = producto
-#     template_name= 'detail_product.html'
+class Detail_publication(DetailView):
+    model = Publicacion
+    template_name = 'detail_publication.html'
 
-# class Create_product(CreateView):
-#     model = producto
-#     template_name = 'create_products.html'
-#     fields = '__all__'
+class Create_publication(CreateView):
+    model = Publicacion
+    template_name = 'create_publication.html'
+    fields = '__all__'
+    def get_success_url(self):
+        return reverse('detail_publication', kwargs={'pk':self.object.pk})
 
-#     def get_success_url(self):
-#         return reverse('detail_product', kwargs={'pk':self.object.pk})
+class Delete_publication(DeleteView):
+    model = Publicacion
+    template_name = 'delete_publication.html'
+    def get_success_url(self):
+        return reverse('list_publications')
 
-# class Delete_product(DeleteView):
-#     model = producto
-#     template_name = 'delete_product.html'
 
-#     def get_success_url(self):
-#         return reverse('list_products')
+class Update_publication(UpdateView):
+    model = Publicacion
+    template_name = 'update_publication.html'
+    fields = '__all__'
 
-# class Update_product(UpdateView):
-#     model = producto
-#     template_name = 'update_product.html'
-#     fields = '__all__'
-
-#     def get_success_url(self):
-#         return reverse('detail_product', kwargs = {'pk':self.object.pk})
+    def get_success_url(self):
+        return reverse('detail_publication', kwargs = {'pk':self.object.pk})

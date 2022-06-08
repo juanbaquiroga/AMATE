@@ -5,14 +5,15 @@
 {% endblock %}
 
 {% block contenido %}
-    <h1 class="title" style="margin-left:30rem">Aca va el contenido de detalles de publicacion/h1>
-    <div class="publicacion">
-        <div class="imgBody">
-            <img src="{{ publicacion.image.url }}" alt="{{publicacion.title}}">
-        </div>
-        <div class="textBody">
-            <h3>{{ publicacion.title }}</h3>
-            <p>{{publicacion.text}}</p>
+    <h1 class="title">detalles de la publicacion</h1>
+    <div class="publicaciones">
+        <div class="publicacion">
+            <div class="text">
+                <h3>{{ object.title }}</h3>
+                <p>{{object.text}}</p>
+                <a href="/home/update-publication/{{object.pk}}/" class="btn btn-primary">Editar</a>
+                <a href="/home/delete-publication/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
+            </div>
         </div>
     </div>
 

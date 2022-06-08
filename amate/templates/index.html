@@ -3,17 +3,20 @@
     home
 {% endblock %}
 {% block contenido %}
+<h1 class="title">publicaciones</h1>
+<div class="publicaciones">
+    {% for publicacion in object_list %}
+        <div class="publicacion">
+            <div class="text">
+                <h3>{{ publicacion.title }}</h3>
+                <p>{{publicacion.text}}</p>
+                <a class="enlaceBody btn btn-primary" href="detail-publication/{{publicacion.pk}}/">ver mas</a>
+            </div>
+        </div>
+    {% endfor %}
+    <a href="create-publication/" class="btn btn-primary">
+        <h3 class="title">agregar publicacion</h3>
+    </a>
+</div>
 
-{% for publicacion in object_list %}
-    <div class="publicacion">
-        <div class="imgBody">
-            <img src="{{ publicacion.image.url }}" alt="{{publicacion.title}}">
-        </div>
-        <div class="textBody">
-            <h3>{{ publicacion.title }}</h3>
-            <p>{{publicacion.text}}</p>
-            <a class="enlaceBody" href="detail-publication/{{publicacion.pk}}/">ver mas</a>
-        </div>
-    </div>
-{% endfor %}
 {% endblock %}
