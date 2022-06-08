@@ -9,7 +9,7 @@
         {%for producto in object_list%}
             {% if producto.category.name == 'Mate' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{producto.image.url}}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
@@ -28,7 +28,7 @@
         {% for producto in object_list %}
             {% if producto.category.name == 'Termo' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{producto.imagen.url}}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{producto.image.url}}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
@@ -45,7 +45,7 @@
         {%for producto in object_list%}
             {% if producto.category.name == 'Combo' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
@@ -62,7 +62,7 @@
         {%for producto in object_list%}
             {% if producto.category.name == 'Bombilla' %}
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{producto.name}}">
+                    <img src="{{ producto.image.url }}" class="img-fluid" alt="{{producto.name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{producto.name}}</h5>
                         <p class="card-text">{{producto.description}}</p>
