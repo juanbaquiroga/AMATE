@@ -2,8 +2,8 @@ from django.urls import path
 from Productos.views import List_products, Create_product, Detail_product, Delete_product, Update_product, search_product, List_category, Create_category, Delete_category, Update_category
 
 urlpatterns =[
-    path('', List_products.as_view(), name = 'List_products'),
-    path('create-product/', Create_product.as_view(), name = 'Create_product'),
+    path('', List_products.as_view(), name = 'list_products'),
+    path('create-product/', Create_product.as_view(), name = 'create_product'),
     path('search-product/', search_product, name = 'search_products'),
     path('detail-product/<int:pk>/', Detail_product.as_view(), name = 'detail_product'),
     path('delete-product/<int:pk>/', Delete_product.as_view(), name = 'delete_product'),
