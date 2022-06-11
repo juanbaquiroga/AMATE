@@ -24,15 +24,18 @@ body{
     border-radius:0.4rem 0.4rem 0 0;
 }
 .publicacion{
+    text-align: center;
     padding: 0.5rem;
-    display: grid;
-    grid-template-areas: 'imgBody textBody';
-    grid-template-columns: 1fr 2fr ;
     max-width: 55rem;
-    gap: 0.7rem;
     margin: 1rem;
     background-color: #2f2f2f;
     border-radius: 1rem;
+}
+
+.publicaciones{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .imgBody{
     grid-area: imgBody;
@@ -40,7 +43,24 @@ body{
 .textBody{
     grid-area: textBody;
 }
+.card-text{
+    font-size: 1rem;
+}
 .publicacion .imgBody img{
     max-width: 100%;
     border-radius: 1rem;
+}
+.formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 3rem;
+    border: solid 0.2rem rgb(49, 49, 49);
+}
+
+.title, legend{
+    text-align: center;
+}
+select, option, input, legend h4{
+    color: rgb(20, 20, 20);
 }

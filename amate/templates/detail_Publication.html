@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Detalle de publicacion
+{% endblock %}
+
+{% block contenido %}
+    <h1 class="title">detalles de la publicacion</h1>
+    <div class="publicaciones">
+        <div class="publicacion">
+            <div class="text">
+                <h3>{{ object.title }}</h3>
+                <p>{{object.text}}</p>
+                <a href="/home/update-publication/{{object.pk}}/" class="btn btn-primary">Editar</a>
+                <a href="/home/delete-publication/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

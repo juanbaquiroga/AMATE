@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block titulo %}
-Crear productos
+Actualizar publicacion
 {% endblock %}
 
 {% block contenido %}
 
     {% if form %}
-        <h2 class="title">Complete los campos del nuevo producto</h2>
+        <h2 class="title">Complete los campos a actualizar</h2>
         <div class="formulario">
             <legend>
-                <h4>formulario de producto</h4>
+                <h4>publicacion</h4>
             </legend>
             <form action="" method="POST">
                 {% csrf_token %}
@@ -21,4 +21,5 @@ Crear productos
             </form>
         </div>
     {% endif %}
+
 {% endblock %}

@@ -8,7 +8,6 @@ from django.db import models
 class Publicacion(models.Model):
     title = models.CharField(max_length=15)
     text = models.CharField(max_length=400)
-    image = models.ImageField(upload_to='home', null=True, blank= True)
     active = models.BooleanField(default=True)
     def __str__(self):
         return self.title
