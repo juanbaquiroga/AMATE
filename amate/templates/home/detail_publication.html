@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Detalle de publicacion
+{% endblock %}
+
+{% block contenido %}
+    <h1 class="title">detalle de la publicacion</h1>
+    <div class="img-detail " style="display: flex; justify-content: center; margin: 2rem auto;">
+        <img style="max-width: 30rem;" src="{{ publicacion.imagen.url }}" alt="{{publicacion.title}}">
+    </div>
+    <div class="text">
+        <h3>{{ publicacion.title }}</h3>
+        <p>{{publicacion.text}}</p>
+    </div>
+    <div class="container-buttons">
+        <a href="/home/update-publication/{{object.pk}}/" class="btn btn-primary">Editar</a>
+        <a href="/home/delete-publication/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
+    </div>
+
+{% endblock %}

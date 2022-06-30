@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<!--body productos-->
+<main class="bodyProductos">
+    <h1 class="title">Productos</h1>
+    <div class="productos">
+        {%for producto in productos%}
+            <div class="card" style="width: 18rem;">
+                {%if producto.imagen%}
+                <img src="{{ producto.imagen.url }}" class="img-fluid" alt="{{object.name}}">
+                {%endif%}
+                <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">{{producto.description}}</p>
+                    <p class="card-text cardPrice" ><small class="text-muted">${{producto.price}}</small></p>
+                    <a href="/products/detail-product/{{producto.pk}}/" class="btn btn-primary">Ver mas!</a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+</main>
+{%endblock%}

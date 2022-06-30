@@ -7,13 +7,18 @@
 {% for publicacion in object_list %}
     <div class="publicacion">
         <div class="imgBody">
-            <img src="{{ publicacion.image.url }}" alt="{{publicacion.title}}">
+            <img src="{{ publicacion.imagen.url }}" alt="{{publicacion.title}}">
         </div>
         <div class="textBody">
             <h3>{{ publicacion.title }}</h3>
             <p>{{publicacion.text}}</p>
-            <a class="enlaceBody" href="#">ver mas</a>
+            <a class="enlaceBody" href="detail-publication/{{publicacion.pk}}">ver mas</a>
         </div>
     </div>
 {% endfor %}
+{% if request.user.is_authenticated and request.user.is_superuser %}
+    <div class="container-buttons">
+        <a class="btn btn-dark" href="/home/create-publication/"> agregar publicacion </a>
+    </div>
+{%endif%}
 {% endblock %}

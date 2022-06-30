@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Crear publicacion
+{% endblock %}
+
+{% block contenido %}
+
+    {% if form %}
+        <h2 class="title">Complete los campos de la nueva publicacion</h2>
+        <div class="formulario">
+            <legend>
+                <h4>formulario de publicacion</h4>
+            </legend>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <table>
+                    {{form.as_table}}
+                </table>
+                <input class="btn btn-primary" type="submit" , value="Enviar">
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}

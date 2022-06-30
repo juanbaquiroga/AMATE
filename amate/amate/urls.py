@@ -18,14 +18,14 @@ from xml.dom.minidom import Document
 from django.contrib import admin
 from django.conf import settings
 from django.urls import path, include
+from amate.views import login_view, logout_view, register_view
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', login_view, name = 'login'),
+    path('logout/', logout_view, name = 'logout'),
+    path('register/', register_view, name = 'register'),
     path('home/', include('Home.urls')),
     path('products/', include('Productos.urls')),
-]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

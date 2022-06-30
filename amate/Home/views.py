@@ -12,30 +12,27 @@ class Publications_list(ListView):
 
 class Detail_Publication(DetailView):
         model = Publicacion
-        template_name = 'detail_Publication.html'
-# class Detail_product(DetailView):
-#     model = producto
-#     template_name= 'detail_product.html'
+        template_name = 'home/detail_publication.html'
 
-# class Create_product(CreateView):
-#     model = producto
-#     template_name = 'create_products.html'
-#     fields = '__all__'
+class Create_Publication(CreateView):
+    model = Publicacion
+    template_name = 'home/create_publication.html'
+    fields = '__all__'
 
-#     def get_success_url(self):
-#         return reverse('detail_product', kwargs={'pk':self.object.pk})
+    def get_success_url(self):
+        return reverse('detail-publication', kwargs={'pk':self.object.pk})
 
-# class Delete_product(DeleteView):
-#     model = producto
-#     template_name = 'delete_product.html'
+class Delete_Publication(DeleteView):
+    model = Publicacion
+    template_name = 'home/delete_publication.html'
 
-#     def get_success_url(self):
-#         return reverse('list_products')
+    def get_success_url(self):
+        return reverse('home')
 
-# class Update_product(UpdateView):
-#     model = producto
-#     template_name = 'update_product.html'
-#     fields = '__all__'
+class Update_Publication(UpdateView):
+    model = Publicacion
+    template_name = 'home/update_publication.html'
+    fields = '__all__'
 
-#     def get_success_url(self):
-#         return reverse('detail_product', kwargs = {'pk':self.object.pk})
+    def get_success_url(self):
+        return reverse('home/detail-publication', kwargs = {'pk':self.object.pk})
