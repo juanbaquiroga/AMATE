@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block titulo %}
-Actualizar publicacion
+Actualizar categoria
 {% endblock %}
 
 {% block contenido %}
 
     {% if form %}
-        <h2 class="title">Complete los campos a actualizar</h2>
+        <h2 class="title">Complete los campos de la categoria a actualizar</h2>
         <div class="formulario">
             <legend>
-                <h4>formulario de publicacion</h4>
+                <h4>formulario de categoria</h4>
             </legend>
             <form action="" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}

@@ -3,12 +3,6 @@ from Productos.models import producto, categoria
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 
-# Create your views here.
-
-# class List_products1(ListView):
-#         model = producto
-#         template_name = 'products.html'
-#         queryset = producto.objects.filter(active = True), categoria.objects.filter(name = True)
 
 def list_products(request):
     productos = producto.objects.all()
@@ -51,5 +45,34 @@ def search_product(request):
     else:
         context = {'errors':'No se encontro el producto'}
     return render(request, 'productos/search_product.html', context = context)
+
+
+class List_category(ListView):
+    model = categoria
+    template_name= 'category/list_category.html'
+
+class Create_category(CreateView):
+    model = categoria
+    template_name = 'category/create_category.html'
+    fields = '__all__'
+
+    def get_success_url(self):
+        return reverse('List_category')
+
+class Delete_category(DeleteView):
+    model = categoria
+    template_name = 'category/delete_category.html'
+
+    def get_success_url(self):
+        return reverse('List_category')
+
+class Update_category(UpdateView):
+    model = categoria
+    template_name = 'category/update_category.html'
+    fields = '__all__'
+
+
+    def get_success_url(self):
+        return reverse('List_category')
 
 

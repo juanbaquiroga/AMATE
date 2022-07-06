@@ -5,16 +5,20 @@
 {% endblock %}
 
 {% block contenido %}
-    <h1 class="title" style="margin-left:30rem">Aca va el contenido de detalles de productos</h1>
+    <h1 class="title" >detalles del productos</h1>
     {%if object.imagen%}
-    <img src="{{ object.imagen.url }}" class="img-fluid" alt="{{object.name}}">
+        <img class='img-detail' src="{{ object.imagen.url }}" class="img-fluid" alt="{{object.name}}">
     {%endif%}
-        <h5 class="card-title">{{object.name}}</h5>
-        <p class="card-text">{{object.description}}</p>
-        <p class="card-text cardPrice"><small class="text-muted">${{object.price}}</small></p>
-    <div class="container-buttons">
-        <a href="/products/update-product/{{object.pk}}/" class="btn btn-primary">Editar</a>
-        <a href="/products/delete-product/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
-    </div> 
+   <div class='text'>
+     <h5 class="card-title">{{object.name}}</h5>
+     <p class="card-text">{{object.description}}</p>
+     <p class="card-text">${{object.price}}</p>
+   </div>
+    {% if request.user.is_authenticated and request.user.is_superuser %}
+        <div class="container-buttons">
+            <a href="/products/update-product/{{object.pk}}/" class="btn btn-primary">Editar</a>
+            <a href="/products/delete-product/{{object.pk}}/" class="btn btn-danger">Eliminar</a>
+        </div> 
+    {%endif%}
 
 {% endblock %}

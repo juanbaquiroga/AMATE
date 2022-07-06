@@ -35,4 +35,8 @@ class Update_Publication(UpdateView):
     fields = '__all__'
 
     def get_success_url(self):
-        return reverse('home/detail-publication', kwargs = {'pk':self.object.pk})
+        return reverse('detail-publication', kwargs = {'pk':self.object.pk})
+
+
+def about_us(request):
+    return render(request, 'home/about_us.html', context = {})

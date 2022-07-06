@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
 
 {% block titulo %}
-Registrarse
+editar usuario
 {% endblock %}
 
 {% block contenido %}
 
-    <h1 class="title">Complete los campos para registrarse</h1>
-    <h3>{{errors}}</h3>
-    <form class="formulario" action="" method="POST">
-        {% csrf_token %}
+    <h1 class="title">Complete los campos que desee modificar</h1>
+    <form class="formulario" action="" method="POST">{% csrf_token %}
         <table>
             {{form.as_table}}
         </table>

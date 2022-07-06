@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block titulo %}
+perfil
+{% endblock %}
+{% block contenido %}
+
+    <h1 class="title">perfil</h1>
+    <div class="user">
+            <h3>{{ user.username }}</h3>
+            <p>{{ user.email }}</p>
+            <a href="/users/update-user/{{request.user.pk}}/">editar usuario</a>
+    </div>
+    <div class="user">
+        <div >
+            <img class="imgProfile" src="{{ object.image.url }}" alt="{{user.name}}">
+        </div>
+        <p>Telefono: {{ object.phone }}</p>
+        <p>Web: {{ object.web }}</p>
+        <a href="/users/update-user-profile/{{request.user.pk}}/">editar perfil</a>
+    </div>
+
+{% endblock %}

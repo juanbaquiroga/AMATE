@@ -17,7 +17,9 @@
     margin: 2rem auto;
     max-width: 30rem;
 }
-
+.logo{
+    max-width: 4.5rem;
+}
 body{
     background-color: #525252;
 }
@@ -45,6 +47,24 @@ body{
 }
 .imgBody{
     grid-area: imgBody;
+}
+.categorias{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    max-width: 70rem;
+    margin: auto;
+}
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch ;
+}
+.img-detail{
+    display: flex; 
+    justify-content: center; 
+    margin: 2rem auto;
+    max-width: 30rem;
 }
 .textBody{
     grid-area: textBody;
@@ -141,6 +161,22 @@ nav a:after {
     transition: width .4s linear;  
 }
 nav a:hover:after {width: 100%;}
+
+.user{
+    max-width: 27rem;
+    padding: 1rem;
+    margin:auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #2f2f2f;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+.imgProfile{
+    max-width: 15rem;
+    border-radius: 1rem;
+}
 
 @media screen and (max-width: 660px) {
 header {text-align: center;}

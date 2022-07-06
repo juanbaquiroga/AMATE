@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block titulo %}
+    categorias
+{% endblock %}
+{% block contenido %}
+<!--body productos-->
+<main class="bodyProductos">
+    <h1 class="title">categorias</h1>
+    <div class="categorias">
+        {%for category in object_list%}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{category.name}}</h5>
+                    <p class="card-text">{{category.description}}</p>
+                    <a href="/products/update-category/{{category.pk}}/" class="btn btn-primary">Editar</a>
+                    <a href="/products/delete-category/{{category.pk}}/" class="btn btn-danger">Eliminar</a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+    <div class="container-buttons">
+        <a class="btn btn-dark" href="/products/create-category/"> agregar categoria</a>
+    </div>
+</main>
+{%endblock%}
