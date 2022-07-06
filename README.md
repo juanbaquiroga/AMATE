@@ -1,6 +1,6 @@
 # AMATE
 
-#*integrantes*
+#integrantes
 ##Juan Bautista Quiroga
 ##Ezequiel Galvan
 
@@ -47,7 +47,7 @@
   - en esta seccion podremos ver las categorias existentes y editarlas o eliminarlas
   - tocando en 'agregar categoria' podremos agregar una nueva categoria para los productos
   
-  ##*nombre de usuario*
+  ##nombre de usuario
   -accediendo aqui podremos editar nuestro perfil(foto de perfil, telefono y web) y nuestro usuario(sername y email)
   
   ##seccion logout
