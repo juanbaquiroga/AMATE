@@ -1,11 +1,12 @@
 /*pantallas +650px*/
-@media screen and(min-width:650px){
+@media screen and (min-width:650px){
     /*nav y logo*/
     .logo {
-        margin-top: 12rem;
+        top: 15px;
+        right: 15px;
         a{
             img{
-                height: 7.8rem;
+                height: 6rem;
             }
         }
     }  
@@ -247,10 +248,11 @@
 /*nav y logo*/
 
     .logo {
-        margin-top: 14rem;
+        top: 15px;
+        right: 15px;
         a {
             img{
-                height: 8.4rem;
+                height: 6.5rem;
             }
         }
     }  
